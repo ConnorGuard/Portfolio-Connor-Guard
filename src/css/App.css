@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import "Buttons.css";
+h2{
+  margin :0;
+  padding-top:9vh;
+}
+html{
+  scroll-behavior: smooth;
+}
+.App {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.page{
+  height: 100vh;
+}
+.page.home{
+
+  background-color:rgb(182, 218, 214);
+}
+
+.page.projects{
+  background-color:rgb(123, 202, 193);
+}
+
+.page.about{
+  background-color:rgb(20, 218, 194);
+}
+.nav{
+  background-color: #ffe4ff;
+  padding: 20px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.content{
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.95em;
+  float: left;
+  margin-right: 300px;
+}
+
+
