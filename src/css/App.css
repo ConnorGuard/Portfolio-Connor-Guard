@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
 @import "Buttons.css";
 h2{
   margin :0;
@@ -16,7 +16,7 @@ html{
 }
 .page.home{
 
-  background-color:rgb(182, 218, 214);
+  background-color:rgb(255, 235, 224);
 }
 
 .page.projects{
@@ -24,26 +24,48 @@ html{
 }
 
 .page.about{
-  background-color:rgb(20, 218, 194);
+  background-color:rgb(255, 235, 224);
+}
+.page.contact{
+  background-color:rgb(123, 202, 193);
 }
 .nav{
-  background-color: #ffe4ff;
-  padding: 20px;
+  background-color:transparent;
+  padding: 2rem;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }
-.content{
-  max-width: 70em;
-  margin-left: auto;
-  margin-right: auto;
-}
-.logo{
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 1.95em;
-  float: left;
-  margin-right: 300px;
+.nav{
+  display: flex;
+  justify-content:space-between;
+  max-width: 90%;
+  margin: auto;
 }
 
+.nav .contents{
+  display: flex;
+  justify-content:space-between;
+
+}
+.logo a{
+  color: rgb(255, 197, 166);
+  font-weight: bold;
+  font-size: 2em;
+  float:left;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.greeting{
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 3em;
+  max-width: 50%;
+  margin: 0 15%;
+  padding-top :5%
+}
+.greeting h2 {
+  color: rgb(0, 0, 0);
+}
 
