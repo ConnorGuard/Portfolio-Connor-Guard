@@ -57,9 +57,8 @@ function Page(props){
       <div id = "home" class = "page home"> 
         <div class = "greeting">
           <h2>I am a Software Developer</h2>
-        </div>   
-          <img src = "images/noGlass.jpg"></img>
-         
+          <img class = "image connor" src="./connor.jpeg" height ={400} width = {400}></img>
+        </div>        
       </div>   
       <div id = "proj" class = "page projects"> 
         <h2>Projects</h2> 
@@ -68,9 +67,24 @@ function Page(props){
         <h2>About</h2> 
       </div>  
       <div id = "contact" class = "page contact"> 
-        <h2>Contact</h2> 
+      <Contact />
       </div>  
+      <div id = "footer" class = "page footer">      
+      </div> 
     </div>
+  )
+}
+
+function Contact(){
+  return(
+  <div class = "contact-form">
+    <form id = "contact-form" method = "post" action="">
+    <input type="text" name="name" placeholder = "name" />
+    <input type="email" name="email" placeholder = "email" />
+    <textarea name = "message" class ="form-control" placeholder = "message" row = "4" required></textarea>
+    <input class = "button" id = "submit" type="submit" value="SUBMIT" />
+    </form>
+  </div>
   )
 }
 
