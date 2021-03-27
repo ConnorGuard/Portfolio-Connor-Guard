@@ -55,19 +55,14 @@ function Page(props){
   return(
     <div class = "page">  
       <div id = "home" class = "page home"> 
-        <div class = "greeting">
-          <h2>I am a Software Developer</h2>
-          <img class = "image connor" src="./connor.jpeg" height ={400} width = {400}></img>
-        </div>        
+        <Intro />      
       </div>   
       <div id = "proj" class = "page projects"> 
-        <h2>Projects</h2> 
       </div>  
       <div id = "about" class = "page about"> 
-        <h2>About</h2> 
       </div>  
       <div id = "contact" class = "page contact"> 
-      <Contact />
+        <Contact />
       </div>  
       <div id = "footer" class = "page footer">      
       </div> 
@@ -86,6 +81,15 @@ function Contact(){
     </form>
   </div>
   )
+}
+
+function Intro(){
+  return(
+    <div class ="homePage">
+      <h2>I am a<br/>Software<br/> Developer</h2>
+      <img class = "image connor" src="./connor.jpeg" ></img>
+    </div>
+  );
 }
 
 export default App;
