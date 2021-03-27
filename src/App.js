@@ -19,12 +19,13 @@ function App() {
 }
 
 function Nav(){
-  const tNav = 900;
+  const tNav = 700;
+  const tLogo = 900;
   const[isToggleOn, setToggle] = useState((window.innerWidth>tNav)? true : false);
-  const[logoOn, toggleLogo] = useState((window.innerWidth>550)? true : false);
+  const[logoOn, toggleLogo] = useState((window.innerWidth>tLogo)? true : false);
   window.addEventListener('resize', ()=>{
     console.log()
-    toggleLogo((window.innerWidth>550)? true: false);
+    toggleLogo((window.innerWidth>tLogo)? true: false);
     setToggle((window.innerWidth>tNav)? true: false);
   })
   return(
@@ -54,14 +55,14 @@ function Navbuttons(){
 function Page(props){
   return(
     <div class = "page">  
-      <div id = "home" class = "page home"> 
+      <div id = "home" class = "home"> 
         <Intro />      
       </div>   
-      <div id = "proj" class = "page projects"> 
+      <div id = "proj" class = "projects"> 
       </div>  
-      <div id = "about" class = "page about"> 
+      <div id = "about" class = "about"> 
       </div>  
-      <div id = "contact" class = "page contact"> 
+      <div id = "contact" class = "contact"> 
         <Contact />
       </div>  
       <div id = "footer" class = "page footer">      
@@ -79,8 +80,19 @@ function Contact(){
     <textarea name = "message" class ="form-control" placeholder = "message" row = "4" required></textarea>
     <input class = "button" id = "submit" type="submit" value="SUBMIT" />
     </form>
+    <Socials />
   </div>
   )
+}
+
+function Socials(){
+  return(
+  <div class = "Socials">
+    <img class = "icon linkedin" src="./linkedin.png" height = "50" widh="50"/>
+    <img class = "icon github" src="./github.png" height = "50" widh="50"/>
+    <img class = "icon email" src="./email.png" height = "31" widh="31"/>
+  </div>
+  );
 }
 
 function Intro(){

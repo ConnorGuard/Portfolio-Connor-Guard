@@ -11,22 +11,33 @@ html{
   background-color:rgb(123, 202, 193);
 }
 .page{
+  overflow: scroll;
   height: 150vh;
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(150vh);
+  scroll-snap-type: y mandatory;
 }
-.page.home{
-
-  background-color:rgb(255, 235, 224);
+.page .home{
+  height: 150vh;
+  background-color:#fcebe0;
+  scroll-snap-align: start;
 }
 
-.page.projects{
+.page .projects{
+  height: 150vh;
   background-color:rgb(123, 202, 193);
+  scroll-snap-align: start;
 }
 
-.page.about{
+.page .about{
+  height: 150vh;
   background-color:rgb(255, 235, 224);
+  scroll-snap-align: start;
 }
-.page.contact{
+.page .contact{
+  height: 150vh;
   background-color:rgb(123, 202, 193);
+  scroll-snap-align: start;
 }
 .page .footer{
   background-color:rgb(157, 206, 200);
@@ -60,7 +71,34 @@ html{
   margin-left: 2rem;
 }
 .logo a:hover{
-  animation:wavey 1s infinite linear;
+  animation:wavey 2s infinite linear;
 }
 
+@keyframes wavey {
+  50% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.Socials{
+  display:flex;
+  padding-top: 50px;
+}
+
+.icon{
+  border-radius: 50%;
+  margin: 20px;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+.icon:hover{
+  transform: scale(1.1);
+}
+.email{
+  border: 5px solid #fcebe0;
+	border-radius: 50%;
+  padding: 5px;
+}
 
