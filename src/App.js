@@ -30,7 +30,7 @@ function Nav(){
   })
   return(
   <div class = "nav">
-    <div class ="logo"> <a href = "#">CONNOR {(logoOn) ? <span href = "#">GUARD</span>: null} </a> </div> 
+    <div class ="logo"> <a href = "#home">CONNOR {(logoOn) ? <span href = "#">GUARD</span>: null} </a> </div> 
     <div class = "content"> 
       <a class = "toggle-button" onClick={() => {setToggle(!isToggleOn)}}>
         <span class ="bar"></span>
@@ -65,8 +65,6 @@ function Page(props){
       <div id = "contact" class = "contact"> 
         <Contact />
       </div>  
-      <div id = "footer" class = "page footer">      
-      </div> 
     </div>
   )
 }
@@ -88,9 +86,9 @@ function Contact(){
 function Socials(){
   return(
   <div class = "Socials">
-    <img class = "icon linkedin" src="./linkedin.png" height = "50" widh="50"/>
-    <img class = "icon github" src="./github.png" height = "50" widh="50"/>
-    <img class = "icon email" src="./email.png" height = "31" widh="31"/>
+     <a href = "https://www.linkedin.com/in/connor-guard/"><img class = "icon linkedin" src="./linkedin.png" height = "50" widh="50"></img></a>
+    <a href = "https://github.com/ConnorGuard"><img class = "icon github" src="./github.png" height = "50" widh="50"></img></a>
+    <a href = "mailto: connor.guard@gmail.com"><img class = "icon email" src="./email.png" height = "31" widh="31"></img></a>
   </div>
   );
 }
@@ -98,7 +96,7 @@ function Socials(){
 function Intro(){
   return(
     <div class ="homePage">
-      <h2>I am a<br/>Software<br/> Developer</h2>
+      <h2>Software<br/> Developer<br/>at QUT</h2>
       <img class = "image connor" src="./connor.jpeg" ></img>
     </div>
   );
