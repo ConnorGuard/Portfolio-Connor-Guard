@@ -8,7 +8,7 @@
     text-decoration:none;
     font-family: 'Roboto', sans-serif;
     font-weight:500;
-    color : rgb(139, 101, 80);
+    color : black;
     background-color: transparent;
     text-align:center;
     transition: all 0.2s;
@@ -68,12 +68,12 @@
   .toggle-button .bar{
    height: 3px;
    width: 100%;
-   background-color : rgb(255, 197, 166);
+   background-color : black;
    border-radius:10px;
    display: none;
   }
   .toggle-button:hover > .bar{
-      background-color : rgb(139, 101, 80);
+      background-color :black;
   }
 
   .nav-buttons{

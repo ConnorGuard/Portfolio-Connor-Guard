@@ -59,14 +59,80 @@ function Page(props){
         <Intro />      
       </div>   
       <div id = "proj" class = "projects"> 
+        <Projects />
       </div>  
-      <div id = "about" class = "about"> 
+      <div id = "about" class = "about">
+        <AboutMe /> 
       </div>  
       <div id = "contact" class = "contact"> 
         <Contact />
       </div>  
     </div>
   )
+}
+function Projects(){
+  const[p2On, toggleP2] = useState(false);
+  return(  
+    <div>
+      {(p2On) ? <TinkerCad exit = {p2On} toggle = {toggleP2}  /> : null}
+      <div class="grid-projects">
+        <div class ="p1">
+          <p>Game Of Life<br></br>&nbsp;</p>
+          <button class = "button" onClick={() => {}}> Launch</button>
+          <a href = "" target="popup"> GitHub </a>
+          <p2><br></br>C#</p2>
+        </div>
+        <div class ="p2">
+          <p>Pattern Matching Arduino Game</p>
+          <button class = "button" onClick={() => {toggleP2(!p2On)}}> Launch</button>
+          <a href = "https://github.com/ConnorGuard/PatternMatchGameArduino" target="popup"> GitHub </a>
+          <p2><br></br>C</p2>
+        </div>
+        <div class ="p3">
+          <p>Asset Trading<br></br>Platform</p>
+          <button class = "button" onClick={() => {}}> Launch</button>
+          <a href = "" target="popup"> GitHub </a>
+          <p2><br></br>Java, SQL</p2>
+        </div>  
+        <div class ="p4">
+        <p>Web Computing<br></br>Project</p>
+          <button class = "button" onClick={() => {}}> Launch</button>
+          <a href = "" target="popup"> GitHub </a>
+          <p2><br></br>React.JS, HTML, CSS, SQL</p2>
+        </div>
+       <div class ="p5">
+       <p>Portfolio<br></br>Website</p>
+          <button class = "button" onClick={() => {}}> Launch</button>
+          <a href = "" target="popup"> GitHub </a>
+          <p2><br></br>React.JS, HTML, CSS</p2>
+       </div>
+        <div class ="p6"></div>
+       <div class ="hideProject">7</div>
+        <div class ="hideProject">8</div>
+        <div class ="hideProject">9</div>
+      </div>
+    </div>
+  
+)
+}
+
+function TinkerCad(props){
+  return(
+    <div class = "tinkerCad">
+      <button class = "button" onClick={() => {props.toggle(!props.exit)}}> Exit</button>
+      <iframe class = "game" width="725" height="453" 
+        src="https://www.tinkercad.com/embed/8nOrSGffqya?editbtn=1" 
+        frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
+    </div>);
+}
+
+function AboutMe(){
+  return(
+    <div class = "aboutme">
+
+    </div>
+  );
 }
 
 function Contact(){
@@ -86,18 +152,32 @@ function Contact(){
 function Socials(){
   return(
   <div class = "Socials">
-     <a href = "https://www.linkedin.com/in/connor-guard/"><img class = "icon linkedin" src="./linkedin.png" height = "50" widh="50"></img></a>
-    <a href = "https://github.com/ConnorGuard"><img class = "icon github" src="./github.png" height = "50" widh="50"></img></a>
-    <a href = "mailto: connor.guard@gmail.com"><img class = "icon email" src="./email.png" height = "31" widh="31"></img></a>
+     <a href = "https://www.linkedin.com/in/connor-guard/" target="popup"><img class = "icon linkedin" src="./linkedin.png" height = "50" widh="50"></img></a>
+    <GitHub />
+    <a href = "mailto: connor.guard@gmail.com" target="popup"><img class = "icon email" src="./email.png" height = "31" widh="31"></img></a>
   </div>
   );
 }
 
+function GitHub(){
+  return(
+    <a class = "github" href = "https://github.com/ConnorGuard"><img class = "icon github" src="./github.png" height = "50" widh="50" target="popup"></img></a>
+  )
+}
+
 function Intro(){
   return(
+    <div>
     <div class ="homePage">
       <h2>Software<br/> Developer<br/>at QUT</h2>
-      <img class = "image connor" src="./connor.jpeg" ></img>
+      <div>
+        <img class = "image connor" src="./connor.jpeg" ></img>
+      </div>
+    </div>
+    <div class ="toProjects">
+      <button onClick={() => {window.location.href='#proj';}}>Learn More</button>
+      <img src="./downArrow.png" onClick={() => {window.location.href='#proj';}} height = "50" widh="50"></img>
+    </div>
     </div>
   );
 }

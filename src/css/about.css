@@ -1,0 +1,15 @@
+.page .about{
+    padding-top: 10%;
+}
+
+.aboutme{
+ max-width: 40%;
+ height: 40%;
+ background-color: rgb(187, 226, 222);
+ border: 5px solid white;
+ color:  rgb(187, 226, 222);
+ margin: auto;
+ border-radius: 10px;
+ animation: float 10s ease-in-out infinite;
+ position:relative;
+}

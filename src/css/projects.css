@@ -1,0 +1,86 @@
+#proj{
+    padding-top: 100px;
+    align-items: center;
+}
+
+.grid-projects{
+    justify-content: space-evenly;
+    max-width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    background-color: transparent;
+    padding: 50px;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.grid-projects > div {
+    animation: float 6s ease-in-out infinite;
+    transition: all 0.2s;
+    border: 5px solid white;
+    background-color: #fcebe0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    height :300px;
+    width: 300px;
+}.grid-projects > div:hover{
+    background-color: #fff6f0;
+}
+
+.hideProject{
+    display: none;
+}
+.grid-projects > .p2{
+    animation-delay:1s
+}
+.grid-projects > .p3{
+    animation-delay:2s
+}
+.grid-projects > .p4{
+    animation-delay:1s
+}
+.grid-projects > .p5{
+    animation-delay:2s
+}
+.grid-projects > .p6{
+    animation-delay:3s
+}
+
+.tinkerCad{
+    z-index:1;
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right:0;
+    transform: translatey(20%);
+    margin:auto;
+}
+.tinkerCad .game{
+    background-color: white;
+    padding-top: -2px;
+}
+
+.tinkerCad .button{
+    border: 2px solid black;
+}
+.grid-projects .button{
+    border: 2px solid black;
+    font-size: 1rem;
+}
+.grid-projects .button:hover{
+    color: white;
+
+    background-color: black;
+    font-size: 1rem;
+}
+
+.grid-projects a{
+    color: black;
+    font-size: 1rem;
+}
+p2{
+    font-size: 1rem;
+}

@@ -15,6 +15,7 @@
     background-color: rgb(255, 235, 224);
     padding : 40px;
     border-radius:10px;
+    border: 5px solid white;
     animation: float 6s ease-in-out infinite;
     position:relative;
     box-shadow: 1px 2px 9px;

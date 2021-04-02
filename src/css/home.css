@@ -15,18 +15,17 @@
     position:relative;
     text-align: left;
     z-index: 1;
-    margin-left: -5%;
 } 
 
 .homePage .connor{
-    width :600px;
-    height: 600px;
+    width :500px;
+    height: 500px;
     box-sizing: border-box;
 	border: 5px white solid;
 	border-radius: 50%;
     transition: all 4s ease-in-out;
     position:relative;
-    margin-left: 2%;
+    margin-left: 20%;
     animation: float 6s ease-in-out infinite;
 }
   
@@ -43,9 +42,9 @@
         padding-top: 20%;
     }
     .homePage .connor{
-        width :400px;
-        height: 400px;
-        margin-left: 2%;
+        width :300px;
+        height: 300px;
+        margin-left: 20%;
     }
 }
 
@@ -66,11 +65,10 @@
         max-width: 100%;
     }
     .homePage .connor{
-        height:70%;
-        width: 70%;
+        height:60%;
+        width: 60%;
         margin: 100%;
         margin: auto;
-        margin-top: 5%;
     }
     .homePage h2 {
         display: flex;
@@ -84,15 +82,23 @@
         padding-top: 25% ;
     }
     .homePage .connor{
-        height:80%;
-        width: 80%;
+        height:60%;
+        width: 60%;
         margin-top: 10%;
+    }
+    .toProjects{
+        transform: translatey(-70px);
+    }
+    .nav-buttons{
+        background-color: white;
+        border-radius: 10px;
+        background-color:rgba(225, 225, 225)
     }
 }
 
 @media(max-height: 400px){
     .homePage{
-        padding-top: 10% ;
+        padding-top: 15% ;
         margin-left: 20%;
     }
     .homePage .connor{
@@ -118,6 +124,53 @@
 	}
 	100% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.toProjects{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toProjects button{ 
+    align-items: center;
+    padding:0.35em 1.2em;
+    border:4px solid transparent;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    color :black;
+    background-color: transparent;
+    text-align:center;
+    font-size: 1.5em;
+    transition: all 0.2s;
+}
+.toProjects button:hover{
+    color: rgb(68, 68, 68);
+}
+
+.toProjects img{
+    transform: translatey(-10px);
+    box-shadow: none;
+}
+.toProjects button:focus {
+    outline: none;
+}
+
+@keyframes moveArrow {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
 		transform: translatey(0px);
 	}
 }
