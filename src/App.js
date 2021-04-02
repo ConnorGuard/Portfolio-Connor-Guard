@@ -170,15 +170,15 @@ function Intro(){
     <div>
     <div class ="homePage">
       <h2>Software<br/> Developer<br/>at QUT</h2>
-      <div>
-        <img class = "image connor" src="./connor.jpeg" ></img>
+      <div class="image-cropper">
+        <img class = "image connor" src="./connor.jpg" ></img>
       </div>
     </div>
     <div class ="toProjects">
       <button onClick={() => {window.location.href='#proj';}}>Learn More</button>
       <img src="./downArrow.png" onClick={() => {window.location.href='#proj';}} height = "50" widh="50"></img>
     </div>
-    </div>
+    </div> 
   );
 }
 
