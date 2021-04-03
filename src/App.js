@@ -79,38 +79,38 @@ function Projects(){
         <div class ="p1">
           <p>Game Of Life<br></br>&nbsp;</p>
           <button class = "button" onClick={() => {}}> Launch</button>
-          <a href = "" target="popup"> GitHub </a>
-          <p2><br></br>C#</p2>
+          <a href = "https://github.com/ConnorGuard/Conways-Game-of-life" target="popup"> Github </a>
+          <p2><br></br><br></br>C#</p2>
         </div>
         <div class ="p2">
           <p>Pattern Matching Arduino Game</p>
           <button class = "button" onClick={() => {toggleP2(!p2On)}}> Launch</button>
-          <a href = "https://github.com/ConnorGuard/PatternMatchGameArduino" target="popup"> GitHub </a>
-          <p2><br></br>C</p2>
+          <a href = "https://github.com/ConnorGuard/PatternMatchGameArduino" target="popup"> Github </a>
+          <p2><br></br><br></br>C</p2>
         </div>
         <div class ="p3">
           <p>Asset Trading<br></br>Platform</p>
           <button class = "button" onClick={() => {}}> Launch</button>
-          <a href = "" target="popup"> GitHub </a>
-          <p2><br></br>Java, SQL</p2>
+          <a href = "" target="popup"> Github </a>
+          <p2><br></br><br></br>Java &nbsp; SQL</p2>
         </div>  
         <div class ="p4">
         <p>Web Computing<br></br>Project</p>
           <button class = "button" onClick={() => {}}> Launch</button>
-          <a href = "" target="popup"> GitHub </a>
-          <p2><br></br>React.JS, HTML, CSS, SQL</p2>
+          <a href = "" target="popup"> Github </a>
+          <p2><br></br><br></br>React.JS &nbsp; HTML &nbsp; CSS &nbsp;  SQL</p2>
         </div>
        <div class ="p5">
        <p>Portfolio<br></br>website</p>
           <button class = "button" onClick={() => {}}> Launch</button>
-          <a href = "" target="popup"> GitHub </a>
-          <p2><br></br>React.JS, HTML, CSS</p2>
+          <a href = "https://github.com/ConnorGuard/Portfolio-Connor-Guard" target="popup"> Github </a>
+          <p2><br></br><br></br>React.JS &nbsp; HTML &nbsp; CSS</p2>
        </div>
         <div class ="p6">
         <p>Raspberry Pi<br></br>challenge</p>
         <button class = "button" onClick={() => {}}> Launch</button>
-          <a href = "" target="popup"> GitHub </a>
-          <p2><br></br>Python</p2>
+          <a href = "https://github.com/ConnorGuard/IdeaPi" target="popup"> Github </a>
+          <p2><br></br><br></br>Python</p2>
         </div>
        <div class ="hideProject">7</div>
         <div class ="hideProject">8</div>
@@ -135,7 +135,8 @@ function TinkerCad(props){
 function AboutMe(){
   return(
     <div class = "aboutme">
-
+      <button class ="button">My Resume</button>
+      <button class ="button">Hire Me!</button>
     </div>
   );
 }
@@ -166,7 +167,7 @@ function Socials(){
 
 function GitHub(){
   return(
-    <a class = "github" href = "https://github.com/ConnorGuard"><img class = "icon github" src="./github.png" height = "50" widh="50" target="popup"></img></a>
+    <a class = "github" href = "https://github.com/ConnorGuard" target="popup"><img class = "icon github" src="./github.png" height = "50" widh="50" target="popup"></img></a>
   )
 }
 
@@ -176,7 +177,7 @@ function Intro(){
     <div class ="homePage">
       <h2>Software<br/> Developer<br/>at QUT</h2>
       <div class="image-cropper">
-        <img class = "image connor" src="./connor.jpg" ></img>
+        <a href = "#about"><img class = "image connor" src="./connor.jpg" ></img></a>
       </div>
     </div>
     <div class ="toProjects">
