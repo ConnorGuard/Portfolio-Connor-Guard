@@ -1,3 +1,13 @@
+.page .home{
+    height: 100vh;
+    background-color:rgb(255, 237, 223);
+    scroll-snap-align: start;
+    background-image: url("background01.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size:cover;
+  }
+
 .homePage{
     font-family: 'Roboto', sans-serif;
     align-items:center;
@@ -16,22 +26,34 @@
     text-align: left;
     z-index: 1;
 } 
-
-.homePage .connor{
-    width :500px;
+.image-cropper{
+    width: 500px;
+    min-width: 500px;
     height: 500px;
-    box-sizing: border-box;
-	border: 5px white solid;
-	border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
     transition: all 4s ease-in-out;
     position:relative;
-    margin-left: 20%;
-    animation: float 6s ease-in-out infinite;
+    border: 5px white solid;
+    margin-left: 10%;
 }
+
+.homePage .connor{
+    transition: all 4s ease-in-out;
+    display: inline;
+    margin-left: -15%;
+    height: 115%;
+    width: 115%;
+    object-fit: cover;
+    position:relative;
+}
+
   
   
 @media(max-width: 1400px){
-    .homePage .connor{
+    .homePage .image-cropper{
         margin-left: -20%;
     }
 }
@@ -41,34 +63,34 @@
         font-size: 3em;
         padding-top: 20%;
     }
-    .homePage .connor{
+    .homePage .image-cropper{
         width :300px;
+        min-width: 300px;
         height: 300px;
-        margin-left: 20%;
+        margin-left: 10%;
     }
 }
 
 @media(max-width: 900px){
     .homePage{
-        max-width: 80%;
-        margin:auto;
+        font-size: 3em;
     }
-    .homePage .connor{
+    .homePage .image-cropper{
         margin-left: -20%;
     }
 }
 
 @media(max-width: 700px){
     .homePage{
+        font-size: 3em;
         flex-direction: column;
         padding-top: 15% ;
         max-width: 100%;
     }
-    .homePage .connor{
-        height:60%;
-        width: 60%;
+    .homePage .image-cropper{
         margin: 100%;
         margin: auto;
+        margin-top: 30px;
     }
     .homePage h2 {
         display: flex;
@@ -76,15 +98,14 @@
         margin: 100%;
         margin: auto;     
     }
+    .toProjects{
+        transform: translatey(-50px);
+    }
 }
 @media(max-width: 500px){
     .homePage{
+        font-size: 2.5em;
         padding-top: 25% ;
-    }
-    .homePage .connor{
-        height:60%;
-        width: 60%;
-        margin-top: 10%;
     }
     .toProjects{
         transform: translatey(-70px);
@@ -101,9 +122,10 @@
         padding-top: 15% ;
         margin-left: 20%;
     }
-    .homePage .connor{
-        height:40%;
-        width: 40%;
+    .homePage .image-cropper{
+        width :200px;
+        min-width: 200px;
+        height: 200px;
         margin-left: 5%;
         margin-top: -5%;
     }

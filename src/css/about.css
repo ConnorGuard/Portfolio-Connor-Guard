@@ -10,6 +10,6 @@
  color:  rgb(187, 226, 222);
  margin: auto;
  border-radius: 10px;
- animation: float 10s ease-in-out infinite;
  position:relative;
+ box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }

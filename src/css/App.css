@@ -22,17 +22,7 @@ html{
   scroll-snap-points-y: repeat(150vh);
   scroll-snap-type: y proximity;
 }
-.page .home{
-  height: 150vh;
-  background-color:rgb(255, 237, 223);
-  scroll-snap-align: start;
-}
 
-.page .projects{
-  height: 150vh;
-  background-color: rgb(187, 226, 222);
-  scroll-snap-align: start;
-}
 
 .page .about{
   height: 150vh;

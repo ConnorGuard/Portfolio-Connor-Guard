@@ -101,12 +101,17 @@ function Projects(){
           <p2><br></br>React.JS, HTML, CSS, SQL</p2>
         </div>
        <div class ="p5">
-       <p>Portfolio<br></br>Website</p>
+       <p>Portfolio<br></br>website</p>
           <button class = "button" onClick={() => {}}> Launch</button>
           <a href = "" target="popup"> GitHub </a>
           <p2><br></br>React.JS, HTML, CSS</p2>
        </div>
-        <div class ="p6"></div>
+        <div class ="p6">
+        <p>Raspberry Pi<br></br>challenge</p>
+        <button class = "button" onClick={() => {}}> Launch</button>
+          <a href = "" target="popup"> GitHub </a>
+          <p2><br></br>Python</p2>
+        </div>
        <div class ="hideProject">7</div>
         <div class ="hideProject">8</div>
         <div class ="hideProject">9</div>
