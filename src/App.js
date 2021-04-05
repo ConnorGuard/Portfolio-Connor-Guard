@@ -70,48 +70,108 @@ function Page(props){
     </div>
   )
 }
+
+const useMove = () => {
+  const [state, setState] = useState({x: 0, y: 0})
+
+  const handleMouseMove = e => {
+    e.persist()
+    setState(state => ({...state, x: e.clientX, y: e.clientY}))
+  }
+  return {
+    x: state.x,
+    y: state.y,
+    handleMouseMove,
+  }
+}
+
+function Description(props){
+  return(
+    <div class ="describe" id = "des" style = {{left: props.x+20, top: props.y+20}}>
+      {props.describe}
+    </div>
+  )
+}
+
+const decribeGOL = () =>{
+  return(
+    <p>
+      The Game of Life, 
+      is a cellular automaton devised by John Horton Conway.
+      Its evolution is determined by its initial state.
+      The player creates an initial configuration and 
+      observes how it evolves. 
+    </p>
+  )
+}
+
+const decribeATP = () =>{
+  return(
+    <p>
+      Digital assets in capital markets are assets issued and transferred using blockchain.
+      A digital asset is a representation of the resource in digital format.
+      This means the asset can change owners through digital trading.
+    </p>
+  )
+}
+
 function Projects(){
   const[p2On, toggleP2] = useState(false);
+  const[pWebOn, togglepWeb] = useState(false);
+  const[hovering, setHover] = useState(false);
+  const[describe, getdescription] = useState();
+  const {x, y, handleMouseMove} = useMove();
+  console.log(hovering)
   return(  
-    <div>
+    <div onMouseMove={handleMouseMove}>
       {(p2On) ? <TinkerCad exit = {p2On} toggle = {toggleP2}  /> : null}
-      <div class="grid-projects">
-        <div class ="p1">
-          <p>Game Of Life<br></br>&nbsp;</p>
-          <button class = "button" onClick={() => {}}> Launch</button>
-          <a href = "https://github.com/ConnorGuard/Conways-Game-of-life" target="popup"> Github </a>
-          <p2><br></br><br></br>C#</p2>
+      {(pWebOn) ? <Portfolio exit = {pWebOn} toggle = {togglepWeb}  /> : null}
+      <div class="grid-projects" id="g-proj" >
+
+          {(hovering) ? <Description x={x} y={y} describe = {describe}/> : null} 
+
+          <div class ="p1" onMouseEnter = {()=>{setHover(true); getdescription(decribeGOL);}} onMouseLeave = {()=>{setHover(false)}}>
+            <p>Game Of Life<br></br>&nbsp;</p>
+            <button class = "button" onClick={() => {}}> Launch</button>
+            <a href = "https://github.com/ConnorGuard/Conways-Game-of-life" target="popup"> Github </a>
+            <p2><br></br><br></br>C#</p2>
+          </div>
+
+        <div class ="p2" onMouseEnter = {()=>{setHover(true); getdescription(decribeATP);}} onMouseLeave = {()=>{setHover(false)}}>
+            <p>Asset Trading<br></br>Platform</p>
+            <button class = "button" onClick={() => {}}> Launch</button>
+            <a href = "" target="popup"> Github </a>
+            <p2><br></br><br></br>Java &nbsp; SQL</p2>
         </div>
-        <div class ="p2">
-          <p>Pattern Matching Arduino Game</p>
-          <button class = "button" onClick={() => {toggleP2(!p2On)}}> Launch</button>
-          <a href = "https://github.com/ConnorGuard/PatternMatchGameArduino" target="popup"> Github </a>
-          <p2><br></br><br></br>C</p2>
-        </div>
-        <div class ="p3">
-          <p>Asset Trading<br></br>Platform</p>
-          <button class = "button" onClick={() => {}}> Launch</button>
-          <a href = "" target="popup"> Github </a>
-          <p2><br></br><br></br>Java &nbsp; SQL</p2>
+
+        <div class ="p3" onMouseEnter = {()=>{setHover(true)}} onMouseLeave = {()=>{setHover(false)}}>
+          <p>Portfolio<br></br>website</p>
+          <button class = "button" onClick={() => {togglepWeb(!pWebOn)}}> Launch</button>
+          <a href = "https://github.com/ConnorGuard/Portfolio-Connor-Guard" target="popup"> Github </a>
+          <p2><br></br><br></br>React.JS &nbsp; HTML &nbsp; CSS</p2>
         </div>  
-        <div class ="p4">
-        <p>Web Computing<br></br>Project</p>
+
+        <div class ="p4" onMouseEnter = {()=>{setHover(true)}} onMouseLeave = {()=>{setHover(false)}}>
+          <p>Web Computing<br></br>Project</p>
           <button class = "button" onClick={() => {}}> Launch</button>
           <a href = "" target="popup"> Github </a>
           <p2><br></br><br></br>React.JS &nbsp; HTML &nbsp; CSS &nbsp;  SQL</p2>
         </div>
-       <div class ="p5">
-       <p>Portfolio<br></br>website</p>
-          <button class = "button" onClick={() => {}}> Launch</button>
-          <a href = "https://github.com/ConnorGuard/Portfolio-Connor-Guard" target="popup"> Github </a>
-          <p2><br></br><br></br>React.JS &nbsp; HTML &nbsp; CSS</p2>
+
+       <div class ="p5" onMouseEnter = {()=>{setHover(true)}} onMouseLeave = {()=>{setHover(false)}}>
+          <p>Pattern Matching Arduino Game</p>
+          <button class = "button" onClick={() => {toggleP2(!p2On)}}> Launch</button>
+          <a href = "https://github.com/ConnorGuard/PatternMatchGameArduino" target="popup"> Github </a>
+          <p2><br></br><br></br>C</p2>
        </div>
-        <div class ="p6">
-        <p>Raspberry Pi<br></br>challenge</p>
-        <button class = "button" onClick={() => {}}> Launch</button>
+
+        <div class ="p6" onMouseEnter = {()=>{setHover(true)}} onMouseLeave = {()=>{setHover(false)}}>
+          <p>Raspberry Pi<br></br>challenge</p>
+          <button class = "button" onClick={() => {}}> Launch</button>
           <a href = "https://github.com/ConnorGuard/IdeaPi" target="popup"> Github </a>
           <p2><br></br><br></br>Python</p2>
         </div>
+
        <div class ="hideProject">7</div>
         <div class ="hideProject">8</div>
         <div class ="hideProject">9</div>
@@ -120,10 +180,20 @@ function Projects(){
   
 )
 }
-
+function Portfolio(props){
+  return(
+    <div class = "display-proj portfolio">
+      <button class = "button" onClick={() => {props.toggle(!props.exit)}}> Exit</button>
+      <iframe class = "webSite" width="725" height="453" 
+        src="http://localhost:3000" 
+        frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+      </iframe>
+    </div>
+  )
+}
 function TinkerCad(props){
   return(
-    <div class = "tinkerCad">
+    <div class = "display-proj tinkerCad">
       <button class = "button" onClick={() => {props.toggle(!props.exit)}}> Exit</button>
       <iframe class = "game" width="725" height="453" 
         src="https://www.tinkercad.com/embed/8nOrSGffqya?editbtn=1" 
@@ -134,9 +204,39 @@ function TinkerCad(props){
 
 function AboutMe(){
   return(
-    <div class = "aboutme">
-      <button class ="button">My Resume</button>
-      <button class ="button">Hire Me!</button>
+    <div class="about-container">
+      <div class ="about-left">
+        <div class = "info-left">
+          <img class = "connorimg" src="connorAbout.jpg"></img>
+          <p href = "#contact">Available for work</p>
+          <button class ="button"onClick={() => {} }>My resume</button>
+          <button class ="button"onClick={() => {window.location.href='#contact';} }>Lets work</button>
+        </div>
+      </div>
+      <div class = "aboutme-container">
+        <div class ="aboutme-content">
+          <h1>I'm Connor Guard, a Fullstack Web and Software Developer</h1>
+          <h3>Get to know me</h3>
+          <p>
+            I’m a software developer based in Brisbane, Australia. 
+            I have been building software applications for 6 years. 
+            With this knowledge, I convert ideas into reality 
+            by creating meaningful and useful software.
+            I'm in my second year of a Computer Science degree at Queensland University of Technology.
+            Take a look at my portfolio work and let’s see if we can work together.
+          </p>
+          <p>
+            Here are a few technologies I've been working with recently:
+            <ul class = "skills-list">
+            <ul>JavaScript</ul> 
+            <ul>React</ul>
+            <ul>C#</ul>
+            <ul>Java</ul>
+            <ul> Node.js</ul>
+            </ul>
+          </p>
+        </div>  
+      </div>
     </div>
   );
 }
@@ -151,6 +251,7 @@ function Contact(){
     <input class = "button" id = "submit" type="submit" value="SUBMIT" />
     </form>
     <Socials />
+    <p><br></br><br></br><br></br>Designed & Built by Connor Guard</p>
   </div>
   )
 }
@@ -176,12 +277,12 @@ function Intro(){
     <div>
     <div class ="homePage">
       <h2>Software<br/> Developer<br/>at QUT</h2>
-      <div class="image-cropper">
-        <a href = "#about"><img class = "image connor" src="./connor.jpg" ></img></a>
-      </div>
+        <div class="image-cropper">
+          <a href = "#about"><img class = "image connor" src="./connor.jpg" ></img></a>
+        </div>
     </div>
     <div class ="toProjects">
-      <button onClick={() => {window.location.href='#proj';}}>Learn More</button>
+      <button onClick={() => {window.location.href='#proj';}}>Projects</button>
       <img src="./downArrow.png" onClick={() => {window.location.href='#proj';}} height = "50" widh="50"></img>
     </div>
     </div> 
