@@ -68,7 +68,7 @@
     background-color: transparent;
   }
   #submit:hover{
-    color: black;
+    color: rgb(71, 71, 71);
   }
 
   @media(max-width: 800px){
@@ -92,3 +92,11 @@
     }
 }
 
+.contact-form >p{
+  font-weight: bold;
+  color: white;
+}
+.contact-form >p:hover{
+  color: rgb(188, 92, 251);
+  transition: all 0.4s;
+}
