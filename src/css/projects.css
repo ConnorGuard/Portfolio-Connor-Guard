@@ -1,7 +1,7 @@
 
 #proj{
-    padding-top: 100px;
     align-items: center;
+    padding-top:100px;
 }
 
 .grid-projects{
@@ -57,7 +57,7 @@
     background-color: #fce0ed;
 }
 
-.tinkerCad{
+.display-proj{
     z-index:1;
     position: fixed;
     bottom: 0;
@@ -94,8 +94,7 @@
     text-align: center;
     align-items: center;
 }
-.grid-projects a:hover{
-}
+
 p2{
     font-size: 1rem;
 }
@@ -104,11 +103,29 @@ p2{
     .grid-projects{
         grid-template-columns: auto auto;
     }
+    .page #proj{
+        height: 150vh;
+        background-size:100%  270vh;
+        background-position:0 -100vh;
+        min-height: 1100px;
+    }
+    .page #home{
+        background-size:100%  320vh;
+    }
 }
 
 @media(max-width: 700px){
     .grid-projects{
         grid-template-columns: auto;
+    }
+    .page #proj{
+        height: 300vh;
+        background-size:100%  420vh;
+        background-position:0 -90vh;
+        min-height: 2200px;
+    }
+    .page #home{
+        background-size:100%  470vh;
     }
 }
 
@@ -120,5 +137,55 @@ p2{
     .grid-projects > div {
         animation: none;
         margin-bottom: 10%;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
     }
+    .page #proj{
+        height: 300vh;
+        background-size:100%  470vh;
+        background-position:0 -90vh;
+        min-height: 2200px;
+    }
+    .page #home{
+        background-size:100%  520vh;
+    }
+    .grid-projects{
+        grid-gap: 0px;
+    }
+}
+
+@media(max-height:500px){
+    .page #proj{
+        padding-top: -20px;
+    }
+    .grid-projects {
+        transform: scale(0.8, 0.8);
+    }
+
+}
+
+.describe#des{
+    display:none;
+    position: fixed;
+    z-index: 2;
+    height :100px;
+    width:250px;
+    border: 5px solid rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255,0.9);
+    border-radius: 5px;
+    transition: all 0s;
+    animation: none;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+
+#des >p{
+    font-size: 0.7rem;
+   text-align: left;
+   font-weight: bold;
+   max-width: 90%;
+   margin: auto;
+}
+
+#g-proj:hover #des{
+        display:flex;
+        transition: all 0s;
 }
