@@ -13,10 +13,45 @@ html{
   font-family: 'Roboto', sans-serif;
   text-align: center;
   background-image: url("background01.jpg") ;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size:cover;
+  background-size:100% 300%;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
+
+/* Background*/
+
+.page .home{
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-size:100% 240vh;
+  background-position:0 0vh;
+  min-height: 500px;
+}
+
+.page .projects{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size:100%  240vh;
+  background-position:0 -120vh;
+  min-height: 500px;
+}
+
+.page .about{
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size:100%  240vh;
+  background-position:0 -10vh;
+  min-height: 500px;
+}
+
+.page .contact{
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-size:100%  240vh;
+  background-position:0 -110vh;
+  min-height: 500px;
+}
+/* Background end*/
 .page{
   scroll-behavior: smooth;
   overflow: scroll;
@@ -24,23 +59,8 @@ html{
   height: 100vh;
   background-color:transparent;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-size:cover;
-}
-.page .home{
-  height: 120vh;
 }
 
-.page .about{
-  height: 100vh;
-    background-color:transparent;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size:cover;
-}
-.page .contact{
-  height: 150vh;
-}
 .nav{
   background-color:transparent;
   padding: 2rem;
