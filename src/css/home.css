@@ -99,18 +99,22 @@
         padding-top: 25% ;
     }
     .toProjects{
-        transform: translatey(-70px);
+        transform: translatey(-55px);
     }
     .nav-buttons{
         background-color: white;
         border-radius: 10px;
         background-color:rgba(225, 225, 225)
     }
+    .homePage .image-cropper{
+        margin-top:4%;
+    }
 }
 
-@media(max-height: 400px){
+@media(max-height: 500px){
     .homePage{
-        padding-top: 15% ;
+        padding-top: 20% ;
+        margin-bottom: -5%;
         margin-left: 20%;
     }
     .homePage .image-cropper{
@@ -118,7 +122,6 @@
         min-width: 200px;
         height: 200px;
         margin-left: 5%;
-        margin-top: -5%;
     }
     .homePage h2 {
         font-size: 1em;     
