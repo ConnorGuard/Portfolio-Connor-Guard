@@ -17,7 +17,6 @@
 }
 
 .grid-projects > div {
-    animation: float 6s ease-in-out infinite;
     transition: all 0.2s;
     border: 5px solid white;
     background-color: #fcebe0;
@@ -26,35 +25,43 @@
     font-size: 30px;
     height :300px;
     width: 300px;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
 }.grid-projects > div:hover{
+    animation: float 3s ease-in-out infinite;
     border: 5px solid rgb(109, 109, 109);
 }
 
 .hideProject{
     display: none;
 }
-.grid-projects > .p1{
-    background-color: #fcf7e0;
+.grid-projects > .GOL{
+    background-color: #fce0e0;
 }
-.grid-projects > .p2{
-    animation-delay:1s;
-    background-color: #effce0;
+.grid-projects > .ATP{
+    background-color: #fcf0e0;
 }
-.grid-projects > .p3{
-    animation-delay:2s;
-    background-color: #e0fcef;
+.grid-projects > .pWeb{
+    background-color: #fbfce0;
 }
-.grid-projects > .p4{
-    animation-delay:1s;
-    background-color: #e0effc;
+.grid-projects > .WP{
+    background-color: #edfce0;
 ;}
-.grid-projects > .p5{
-    animation-delay:2s;
-    background-color: #efe0fc;
+.grid-projects > .AG{
+    background-color: #e2fce0;
 }
-.grid-projects > .p6{
-    animation-delay:3s;
-    background-color: #fce0ed;
+.grid-projects > .ideaPi{
+    background-color: #e0fcfb;
+}
+.grid-projects > .TP{
+    background-color: #e0e6fc;
+}
+
+.grid-projects > .webS{
+    background-color: #fae0fc;
+}
+
+.grid-projects > .p9{
+    background-color: #f3e0fc;
 }
 
 .display-proj{
@@ -72,9 +79,24 @@
     padding-top: -2px;
 }
 
+.AppPrototype .prototype{
+    background-color: white;
+    padding-top: -2px;
+}
+.AppPrototype .button{
+    background-color: transparent ;
+    border-radius: 50px;
+}
 .tinkerCad .button{
-    border: 2px solid black;
+    background-color: transparent ;
+    border-radius: 50px;
+}
+.portfolio .webSite{
     background-color: white ;
+}
+.portfolio .button{
+    background-color: transparent ;
+    border-radius: 50px;
 }
 .grid-projects .button{
     border: 2px solid black;
@@ -131,8 +153,8 @@ p2{
 
 
 @media(max-width: 500px){
-    .page .projects{
-        height: 300vh;
+    .page .projects-container{
+        height: 330vh;
     }
     .grid-projects > div {
         animation: none;
@@ -140,7 +162,7 @@ p2{
         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
     }
     .page #proj{
-        height: 300vh;
+        height: 330vh;
         background-size:100%  470vh;
         background-position:0 -90vh;
         min-height: 2200px;
@@ -150,6 +172,9 @@ p2{
     }
     .grid-projects{
         grid-gap: 0px;
+    }
+    #aboutme-right {
+        height: 650px;
     }
 }
 
@@ -188,4 +213,18 @@ p2{
 #g-proj:hover #des{
         display:flex;
         transition: all 0s;
+}
+
+.projects-container .button{
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+.projects-container .button:hover{
+    color: white;
+
+    background-color: black;
+    font-size: 1rem;
 }

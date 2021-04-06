@@ -28,8 +28,8 @@ html{
   min-height: 500px;
 }
 
-.page .projects{
-  height: 100vh;
+.page .projects-container{
+  height: 130vh;
   background-repeat: no-repeat;
   background-size:100%  240vh;
   background-position:0 -120vh;
