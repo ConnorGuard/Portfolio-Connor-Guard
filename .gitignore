@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#hide database api keys
+firebase.js
+
 # testing
 /coverage
 
