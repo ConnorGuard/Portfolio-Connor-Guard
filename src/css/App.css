@@ -33,7 +33,7 @@ html{
   background-repeat: no-repeat;
   background-size:100%  240vh;
   background-position:0 -120vh;
-  min-height: 500px;
+  min-height: 800px;
 }
 
 .page .about{
@@ -112,7 +112,7 @@ html{
   transform: scale(1.1);
 }
 .email{
-  border: 5px solid #fcebe0;
+  border: 5px solid #ffffff;
 	border-radius: 50%;
   padding: 5px;
 }

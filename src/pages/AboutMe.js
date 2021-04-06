@@ -32,7 +32,7 @@ function AboutMe() {
             <li>Node.js</li>
             <li>Java</li>
             <li>C</li>
-            <li>Arduino</li>
+            <li>SQL</li>
           </ul>
 
         </div>

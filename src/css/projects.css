@@ -121,12 +121,25 @@ p2{
     font-size: 1rem;
 }
 
+.page #proj.projects-container.hide{
+    height: 100vh;
+}
+.page #proj.projects-container.show{
+    height: 130vh;
+}
+
 @media(max-width: 1100px){
     .grid-projects{
         grid-template-columns: auto auto;
     }
-    .page #proj{
-        height: 150vh;
+    .page #proj.projects-container.hide{
+        height: 180vh;
+        background-size:100%  270vh;
+        background-position:0 -100vh;
+        min-height: 1100px;
+    }
+    .page #proj.projects-container.show{
+        height: 230vh;
         background-size:100%  270vh;
         background-position:0 -100vh;
         min-height: 1100px;
@@ -140,8 +153,14 @@ p2{
     .grid-projects{
         grid-template-columns: auto;
     }
-    .page #proj{
-        height: 300vh;
+    .page #proj.projects-container.hide{
+        height: 330vh;
+        background-size:100%  420vh;
+        background-position:0 -90vh;
+        min-height: 2200px;
+    }
+    .page #proj.projects-container.show{
+        height: 430vh;
         background-size:100%  420vh;
         background-position:0 -90vh;
         min-height: 2200px;
@@ -161,8 +180,14 @@ p2{
         margin-bottom: 10%;
         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
     }
-    .page #proj{
+    .page #proj.projects-container.hide{
         height: 330vh;
+        background-size:100%  470vh;
+        background-position:0 -90vh;
+        min-height: 2200px;
+    }
+    .page #proj.projects-container.show{
+        height: 400vh;
         background-size:100%  470vh;
         background-position:0 -90vh;
         min-height: 2200px;
@@ -172,9 +197,6 @@ p2{
     }
     .grid-projects{
         grid-gap: 0px;
-    }
-    #aboutme-right {
-        height: 650px;
     }
 }
 
@@ -228,3 +250,4 @@ p2{
     background-color: black;
     font-size: 1rem;
 }
+

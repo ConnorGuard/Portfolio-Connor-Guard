@@ -10,8 +10,9 @@ function Projects() {
     const [showMore, setShowMore] = useState(false);
     const [describe, getdescription] = useState();
     const { x, y, handleMouseMove } = useMove();
+
     return (
-        <div id="proj" class="projects-container" onMouseMove={handleMouseMove} style={showMore ? { height: '130vh' } : { height: '100vh' }}   >
+        <div id="proj" class={showMore ? "projects-container show" : "projects-container hide"} onMouseMove={handleMouseMove}>
             {(TinkerOn) ? <TinkerCad exit={TinkerOn} toggle={toggleTinker} /> : null}
             {(pWebOn) ? <Portfolio exit={pWebOn} toggle={togglepWeb} /> : null}
             {(prototypeOn) ? <AppPrototype exit={prototypeOn} toggle={togglePrototype} /> : null}

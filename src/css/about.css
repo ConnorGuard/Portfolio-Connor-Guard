@@ -106,32 +106,37 @@
     height : 500px;
 }
 
-@media(max-height:500px){
+@media(max-width:1000px){
     .about-container {
-        margin-top: -10%;
-        transform: scale(0.7, 0.7);
+        transform: scale(0.9, 0.9);
     }
     .aboutme-container {
         margin-left: 10%;
-        max-width: 400px;
+        width: 400px;
     }
-
+    #aboutme-right{ 
+        height:700px;
+    }
 }
-@media (max-width:500px){
+
+@media (max-width:700px){
+    #aboutme-right{ 
+        height: 60%;
+        margin-left: auto;
+        width: 90%;
+        margin-top: 70%;
+    }
     .about-container {
-        margin-top: -10%;
+        margin:auto;
+        margin-top: -15%;
         transform: scale(0.8, 0.8);
         grid-template-columns: auto;
-        grid-gap: 150px;
-    }
-    .aboutme-container {
-        margin-left: 0%;
-        max-width: 400px;
     }
     .about-left{
         display: flex;
         flex-direction: column;
         align-items: center;
+        height:auto;
     }
     .about-left .button{
         width: 90%;
@@ -149,6 +154,29 @@
         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);    
     }
     .page #about{
-        height:200vh
+        height:180vh
+    }
+
+    @media (max-width:550px){
+        #aboutme-right{ 
+            height: 80%;
+            margin-left: auto;
+            width: 90%;
+            margin-top: 50%;
+        }
+    }
+
+    @media(max-height:500px){
+        .about-container {
+            margin-top: -10%;
+            transform: scale(0.7, 0.7);
+        }
+        .aboutme-container {
+            margin-left: 10%;
+            max-width: 400px;
+        }
+        #aboutme-right{ 
+            height:700px;
+        }
     }
 }

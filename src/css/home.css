@@ -104,7 +104,7 @@
     .nav-buttons{
         background-color: white;
         border-radius: 10px;
-        background-color:rgba(225, 225, 225)
+        background-color:rgba(225, 225, 225,0.5)
     }
     .homePage .image-cropper{
         margin-top:4%;
