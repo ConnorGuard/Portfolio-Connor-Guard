@@ -81,6 +81,9 @@
     #contact-form{
       margin-top: 50%;
     }
+    .Socials{
+      margin-left: -40%;
+    }
   }
 
   @media(max-height: 400px){
@@ -94,9 +97,5 @@
 
 .contact-form >p{
   font-weight: bold;
-  color: white;
-}
-.contact-form >p:hover{
-  color: rgb(188, 92, 251);
-  transition: all 0.4s;
+  color: black;
 }

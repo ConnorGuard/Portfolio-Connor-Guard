@@ -19,7 +19,7 @@
 .grid-projects > div {
     transition: all 0.2s;
     border: 5px solid white;
-    background-color: #fcebe0;
+    background-color: transparent;
     border-radius: 10px;
     text-align: center;
     font-size: 30px;
@@ -29,39 +29,11 @@
 }.grid-projects > div:hover{
     animation: float 3s ease-in-out infinite;
     border: 5px solid rgb(109, 109, 109);
+    background-color: transparent;
 }
 
 .hideProject{
     display: none;
-}
-.grid-projects > .GOL{
-    background-color: #fce0e0;
-}
-.grid-projects > .ATP{
-    background-color: #fcf0e0;
-}
-.grid-projects > .pWeb{
-    background-color: #fbfce0;
-}
-.grid-projects > .WP{
-    background-color: #edfce0;
-;}
-.grid-projects > .AG{
-    background-color: #e2fce0;
-}
-.grid-projects > .ideaPi{
-    background-color: #e0fcfb;
-}
-.grid-projects > .TP{
-    background-color: #e0e6fc;
-}
-
-.grid-projects > .webS{
-    background-color: #fae0fc;
-}
-
-.grid-projects > .p9{
-    background-color: #f3e0fc;
 }
 
 .display-proj{
@@ -133,74 +105,63 @@ p2{
         grid-template-columns: auto auto;
     }
     .page #proj.projects-container.hide{
+        height: 150vh;
+        background-size:100%  270vh;
+        background-position:0 -100vh;
+        min-height: 1100px;
+    }
+    .page #proj.projects-container.show{
         height: 180vh;
         background-size:100%  270vh;
         background-position:0 -100vh;
         min-height: 1100px;
     }
-    .page #proj.projects-container.show{
-        height: 230vh;
-        background-size:100%  270vh;
-        background-position:0 -100vh;
-        min-height: 1100px;
-    }
-    .page #home{
-        background-size:100%  320vh;
+}
+@media(max-width: 800px){
+    .grid-projects .button{
+        display: none;
     }
 }
+
+
 
 @media(max-width: 700px){
     .grid-projects{
-        grid-template-columns: auto;
+        justify-content: space-evenly;
+        max-width:90%;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        Padding:0;
+        background-color: transparent;
+        grid-template-columns: auto auto;
+    }
+    .grid-projects > div{
+        width: 100%;
+        height: 100%;
+        font-size: 4vw;
+    }
+    .projects-container .grid-projects .button{
+        font-size: 3vw;
+    }
+   p2{
+        font-size: 3vw;
     }
     .page #proj.projects-container.hide{
-        height: 330vh;
-        background-size:100%  420vh;
-        background-position:0 -90vh;
-        min-height: 2200px;
+        height: 120vh;
+;
     }
     .page #proj.projects-container.show{
-        height: 430vh;
-        background-size:100%  420vh;
-        background-position:0 -90vh;
-        min-height: 2200px;
+        height: 150vh;
     }
-    .page #home{
-        background-size:100%  470vh;
+    .projects-container #showMore{
+        margin-top: 100px;
     }
 }
 
-
-@media(max-width: 500px){
-    .page .projects-container{
-        height: 330vh;
-    }
-    .grid-projects > div {
-        animation: none;
-        margin-bottom: 10%;
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
-    }
-    .page #proj.projects-container.hide{
-        height: 330vh;
-        background-size:100%  470vh;
-        background-position:0 -90vh;
-        min-height: 2200px;
-    }
-    .page #proj.projects-container.show{
-        height: 400vh;
-        background-size:100%  470vh;
-        background-position:0 -90vh;
-        min-height: 2200px;
-    }
-    .page #home{
-        background-size:100%  520vh;
-    }
-    .grid-projects{
-        grid-gap: 0px;
-    }
-}
 
 @media(max-height:500px){
+    
     .page #proj{
         padding-top: -20px;
     }
@@ -217,11 +178,12 @@ p2{
     height :100px;
     width:250px;
     border: 5px solid rgb(255, 255, 255);
-    background-color:rgb(255, 255, 255,0.9);
+    background-color:rgba(255, 255, 255, 0.6);
     border-radius: 5px;
     transition: all 0s;
     animation: none;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    filter: blur();
 }
 
 #des >p{

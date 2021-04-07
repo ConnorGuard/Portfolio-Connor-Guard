@@ -77,7 +77,7 @@ function Projects() {
 
                 <div Class={(showMore) ? "p9 hideProject" : "hideProject"}></div>
             </div>
-            <button id="showMore" class="button" onClick={() => { setShowMore(!showMore); }}>{(showMore) ? "Show Less" : "Show More"}</button>
+            <button id="showMore" class="button" onClick={() => { setShowMore(!showMore);}}>{(showMore) ? "Show Less" : "Show More"}</button>
         </div>
 
     )

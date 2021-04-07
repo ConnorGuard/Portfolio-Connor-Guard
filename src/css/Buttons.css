@@ -23,7 +23,7 @@
       margin:0.4em auto;
     }
   }
-  .bouncy{
+  .bouncy01{
     animation:bouncy 5s infinite linear;
     position:relative;
     }
@@ -82,7 +82,8 @@
     align-items: center;
   }
   .nav-buttons .button:hover{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    color:rgb(129, 129, 129)
   }
 
   @media(max-width: 700px){

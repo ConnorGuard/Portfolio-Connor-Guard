@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <body classsName = "body">
+      <body classsName="body">
         <Nav />
         <Pages />
       </body>
@@ -22,20 +22,19 @@ function App() {
   );
 }
 
-
-function Pages(){
-  return(
-    <div class = "page">  
-      <div id = "home" class = "home"> 
-        <Home />      
-      </div>   
-        <Projects />
-      <div id = "about" class = "about">
-        <AboutMe /> 
-      </div>  
-      <div id = "contact" class = "contact"> 
+function Pages() {
+  return (
+    <div class="page">
+      <div id="home" class="home">
+        <Home />
+      </div>
+      <Projects />
+      <div id="about" class="about">
+        <AboutMe />
+      </div>
+      <div id="contact" class="contact">
         <Contact />
-      </div>  
+      </div>
     </div>
   )
 }

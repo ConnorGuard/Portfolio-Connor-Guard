@@ -10,12 +10,13 @@ html{
 }
 
 .App {
+  background-image: linear-gradient( 135deg, #ffeeda 30%, #e2fbeb 100%);
+  
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background-image: url("background01.jpg") ;
-  background-size:100% 300%;
-  background-repeat: no-repeat;
   background-size:cover;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
 }
 
 /* Background*/
@@ -23,13 +24,12 @@ html{
 .page .home{
   height: 120vh;
   background-repeat: no-repeat;
-  background-size:100% 240vh;
-  background-position:0 0vh;
+  background-position:50% 50%;
+  background-size:cover;
   min-height: 500px;
 }
 
 .page .projects-container{
-  height: 130vh;
   background-repeat: no-repeat;
   background-size:100%  240vh;
   background-position:0 -120vh;
@@ -39,16 +39,14 @@ html{
 .page .about{
   height: 80vh;
   background-repeat: no-repeat;
-  background-size:100%  240vh;
-  background-position:0 -10vh;
   min-height: 500px;
 }
 
 .page .contact{
+
   height: 120vh;
   background-repeat: no-repeat;
-  background-size:100%  240vh;
-  background-position:0 -110vh;
+  background-size:cover;
   min-height: 500px;
 }
 /* Background end*/
@@ -101,6 +99,7 @@ html{
 .Socials{
   display:flex;
   padding-top: 50px;
+  
 }
 
 .icon{

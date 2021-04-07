@@ -1,18 +1,17 @@
 export default Home;
 
-function Home(){
-    return(
-        <div>
-        <div class ="homePage">
-        <h2>Software<br/> Developer<br/>at QUT</h2>
-            <div class="image-cropper">
-            <a href = "#about"><img class = "image connor" src="./connor.jpg" ></img></a>
+function Home() {
+    return (
+        <div id ="home-page">
+            <div class="grid-home">
+                <div class="homePage">
+                    <h3>Software Developer at QUT</h3>
+                </div>
+                <a href="#about"><img class="image connor" src="./connor.jpg" ></img></a>
+                <div class="toProjects button">
+                    <button onClick={() => { window.location.href = '#proj'; }}>Projects</button>
+                </div>
             </div>
         </div>
-        <div class ="toProjects">
-        <button onClick={() => {window.location.href='#proj';}}>Projects</button>
-        <img src="./downArrow.png" onClick={() => {window.location.href='#proj';}} height = "50" widh="50"></img>
-        </div>
-        </div> 
     );
 }
