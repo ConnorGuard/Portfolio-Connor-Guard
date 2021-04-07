@@ -23,64 +23,70 @@ function Projects() {
 
                 <div class="GOL" onMouseEnter={() => { setHover(true); getdescription(decribeGOL); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Game Of Life<br></br>&nbsp;</p>
-                    <button class="button" onClick={() => { }}> Launch</button>
-                    <a href="https://github.com/ConnorGuard/Conways-Game-of-life" target="popup"> Github </a>
-                    <p2><br></br><br></br>C#</p2>
+                    <div>
+                        <button class="button" onClick={() => { }}> Launch</button>
+                        <a href="https://github.com/ConnorGuard/Conways-Game-of-life" target="popup"> <GithubBlack /> </a>
+                    </div>
+                    <div><p2>C#</p2></div>
                 </div>
 
                 <div class="AG" onMouseEnter={() => { setHover(true); getdescription(decribePMAG); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Pattern Matching Arduino Game</p>
                     <button class="button" onClick={() => { toggleTinker(!TinkerOn) }}> Launch</button>
-                    <a href="https://github.com/ConnorGuard/PatternMatchGameArduino" target="popup"> Github </a>
+                    <a href="https://github.com/ConnorGuard/PatternMatchGameArduino" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>C</p2>
                 </div>
 
                 <div class="pWeb" onMouseEnter={() => { setHover(true); getdescription(decribePortfolio); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Portfolio<br></br>website</p>
                     <button class="button" onClick={() => { togglepWeb(!pWebOn) }}> Launch</button>
-                    <a href="https://github.com/ConnorGuard/Portfolio-Connor-Guard" target="popup"> Github </a>
+                    <a href="https://github.com/ConnorGuard/Portfolio-Connor-Guard" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>React.JS &nbsp; HTML &nbsp; CSS</p2>
                 </div>
 
                 <div Class={(showMore) ? "TP ShowProject" : "TP ShowProject"} onMouseEnter={() => { setHover(true); getdescription(decribePrototype); }} onMouseLeave={() => { setHover(false) }}> <p>Travel Planner<br></br>design challenge</p>
                     <button class="button" onClick={() => { togglePrototype(!prototypeOn) }}> Launch</button>
-                    <a href="https://github.com/ConnorGuard/Travel-Planner-Design" target="popup"> Github </a>
+                    <a href="https://github.com/ConnorGuard/Travel-Planner-Design" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>Photoshop invisionapp </p2></div>
 
                 <div class="ideaPi" onMouseEnter={() => { setHover(true); getdescription(decribeRaspberry); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Raspberry Pi<br></br>challenge</p>
                     <button class="button" onClick={() => { }}> Launch</button>
-                    <a href="https://github.com/ConnorGuard/IdeaPi" target="popup"> Github </a>
+                    <a href="https://github.com/ConnorGuard/IdeaPi" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>Python Google & SendGrid API</p2>
                 </div>
 
                 <div Class={(showMore) ? "webS ShowProject" : "webS ShowProject"} onMouseEnter={() => { setHover(true); getdescription(describeWebApp); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Shop From Home<br></br>web scraper</p>
                     <button class="button" onClick={() => { }}> Launch</button>
-                    <a href="" target="popup"> Github </a>
+                    <a href="" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>Python &nbsp; HTML &nbsp; CSS &nbsp;  SQL</p2>
                 </div>
 
                 <div Class={(showMore) ? "WP ShowProject" : "WP hideProject"} onMouseEnter={() => { setHover(true); getdescription(describeWebApp); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Web Computing<br></br>Project</p>
                     <button class="button" onClick={() => { }}> Launch</button>
-                    <a href="" target="popup"> Github </a>
+                    <a href="" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>React.JS &nbsp; HTML &nbsp; CSS &nbsp;  SQL</p2>
                 </div>
 
                 <div Class={(showMore) ? "ATP ShowProject" : "ATP hideProject"} onMouseEnter={() => { setHover(true); getdescription(decribeATP); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Asset Trading<br></br>Platform</p>
                     <button class="button" onClick={() => { }}> Launch</button>
-                    <a href="" target="popup"> Github </a>
+                    <a href="" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>Java &nbsp; SQL</p2>
                 </div>
 
                 <div Class={(showMore) ? "p9 hideProject" : "hideProject"}></div>
             </div>
-            <button id="showMore" class="button" onClick={() => { setShowMore(!showMore);}}>{(showMore) ? "Show Less" : "Show More"}</button>
+            <button id="showMore" class="button" onClick={() => { setShowMore(!showMore); }}>{(showMore) ? "Show Less" : "Show More"}</button>
         </div>
 
     )
+}
+
+function GithubBlack() {
+    return (<img class="github-proj" src="./github-proj.png" height="40" widh="40" target="popup"></img>)
 }
 
 function Description(props) {
