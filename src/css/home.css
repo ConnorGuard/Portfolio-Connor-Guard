@@ -1,152 +1,127 @@
-@media(min-width:500px){
-    #home-page{
-        transition: all 4s ease-in-out;
-        align-items: center;
-    }
-    .homePage{
-        font-family: 'Roboto', sans-serif;
-        padding-left: 40%;
-        text-align:center;
-        font-size: 5em;
-        display:flex;
-        max-width: 100%;
-        margin: auto;
-        padding-top: 10%;
-        transition: all 4s ease-in-out;
-        text-align: center;
-    }
-    .grid-home .image.connor{
-        margin-top: 30%;
-        margin-left: -18%;
-        max-height :600px;
-        max-width:500px;
-        height: auto;
-        width:100%;
-        display: flex;
-        border: 5px solid white;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    }
-    .grid-home{
-        display: grid;
-        grid-template-columns: 50% 30% 20%;
-    }
-    
-    .homePage h3 {
-        font-size: 7vw;
-        display: flex;
-        margin-top: 15%;
-        color: rgb(0, 0, 0);
-        position:relative;
-        text-align: left;
-        z-index: 1;
-        max-width: 50%;
-    } 
-    .toProjects{
-        padding-top:120%;
-        display: flex;
-        align-items: center;
-        margin-left: -170%;
-    }
-    
-    .toProjects button{ 
-        display: flex;
-        align-items: center;
-        padding:0.35em 1.2em;
-        border:2px solid white;
-        margin:0 0.3em 0.3em 0;
-        border-radius:0em;
-        box-sizing: border-box;
-        text-decoration:none;
-        font-family: 'Roboto', sans-serif;
-        font-weight:500;
-        color :white;
-        background-color: transparent;
-        text-align:center;
-        font-size: 1.5em;
-        transition: all 0.2s;
-        z-index: 5;
-    }
-    .toProjects button:hover{
-        background-color: white;
-        color: rgb(0, 0, 0);
-    }
-    
-    .toProjects button:focus {
-        outline: none;
-    }
+
+.homePage{
+    font-family: 'Roboto', sans-serif;
+}
+.Title{
+    word-wrap: break-word;
+    z-index: 1;
+    text-align: left;
+    align-items: center;
+    line-height: 0.3;
+    margin-left: 20%;
+    margin-right: 35%;
+    padding-top: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+#home-page h1{
+    word-wrap: break-word;
+    display: block;
+    font-size: 5vw;
+    line-height: 0;
+}
+#home-page h2{
+    word-wrap: break-word;
+    display: block;
+    font-size: 1.8rem;
+    font-weight:lighter;
+    margin-left: 5px;
+}
+#home-page h3{
+    word-wrap: break-word;
+    display: block;
+    font-size: 2rem;
+    color: rgb(93, 93, 93);
+    font-weight:lighter;
+    margin-left: 5px;
+    line-height: 1;
+} 
+.toProjects.button{
+    font-family: 'Roboto', sans-serif;
+    display:inline-block;
+    border:2px solid black;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    color : black;
+    background-color: transparent;
+    text-align:center;
+    padding: 0;
+    height: 80px;
+    width:150px;
+    margin: auto;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    z-index: 3;
+    transition: all 7s;
+    display: block;
+    margin-top: 80px;
+}
+.toProjects.button:hover{
+    color : rgb(255, 255, 255);
+    background-color : black;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transition: all 0.4s;
 }
 
 
-@media(max-width: 1000px){
-    .grid-home{
 
-    }
-    .grid-home .image.connor{
-        transition: all 4s ease-in-out;
-        margin-left: 0;
-        width:130%;
-    }
-    #home-page{
-        padding-top: 15%;  
-        padding-left: 0;
-    }
-    .toProjects {
-        font-size: 2vw;
-    }
-    .toProjects.button button{ 
-        border: 1px solid white;
-    }
-
-    
+.image.connor{
+    transition: all 7s;
+    display: flex;
+    margin-top: 300px;
+    margin-left: 70%;
+    width: auto;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    z-index: -3;
+}.image.connor:hover{
+    animation: float 3s ease-in-out infinite;
 }
-  
-/*for mobile*/
-@media(max-width: 500px){
-    .grid-home .image.connor{
-       display: none;
-    }
+
+
+
+@media(max-width:1000px){
     #home{
-        background-image: url("connor.jpg");
         background-repeat: no-repeat;
-        background-size:cover; 
+        background-size:cover;
+        min-height: 500px;
     }
     #home-page{
-        background-color: rgba(255, 255, 255, 0.5);
-        height: 120vh;
-        padding-top:0.1%;
+        height:120vh;
+
     }
-    .homePage h3 {
-        font-size: 15vw;
-        margin-top: 35%;
-        margin-left: 10%;
-        color: rgb(0, 0, 0);
-        position:relative;
-        text-align: left;
-        z-index: 1;
-        max-width: 50%;
+    .Title{
+        padding-top: 200px;
+        max-width: 90%;
+        margin: auto;
+    }
+    #home-page h1{
+        font-size: 10vw;
+    }
+    #home-page h2{
+        font-size: 5vw;
+    }
+    #home-page h3{
+        font-size: 5vw;
     } 
-    .toProjects.button button{
-        margin-top: 30%;
-        display: flex;
-        align-items: center;
-        padding:0.35em 1.2em;
-        border:1px solid black;
-        border-radius:0em;
-        box-sizing: border-box;
-        text-decoration:none;
-        font-family: 'Roboto', sans-serif;
-        font-weight:500;
-        color :black;
-        background-color: transparent;
-        text-align:center;
-        font-size: 3em;
-        transition: all 0.2s;
-        z-index: 5;
+    .grid-home{
+   display:grid;
+   grid-template-columns: auto;
     }
-    .toProjects button:hover{
-        background-color: black;
-        color: rgb(255, 255, 255);
+    .toProjects.button{
+     margin-left: 0px;
+     max-width: 80%;
+     margin: auto;
+     transform: translatey(30px);
+    }
+    .image.connor{
+        display: none;
     }
 }
 
