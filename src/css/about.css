@@ -129,7 +129,6 @@
     .about-container {
         margin:auto;
         margin-top: -15%;
-        transform: scale(0.8, 0.8);
         grid-template-columns: auto;
     }
     .about-left{
@@ -139,10 +138,11 @@
         height:auto;
     }
     .about-left .button{
-        width: 90%;
+        width: 70%;
+        height: 50px;
         margin: auto;
         margin-top: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         border: 2px solid black;
         font-size: 1rem;
     }
@@ -154,6 +154,7 @@
         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);    
     }
     .page #about{
+        padding-top: 100px;
         height:180vh
     }
 

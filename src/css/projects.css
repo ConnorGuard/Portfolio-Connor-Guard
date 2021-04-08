@@ -1,37 +1,37 @@
-
-#proj{
-    align-items: center;
-    padding-top:100px;
+@media(min-width:500px){
+    #proj{
+        align-items: center;
+        padding-top:100px;
+    }
+    
+    .grid-projects{
+        justify-content: space-evenly;
+        max-width: 50%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px;
+        background-color: transparent;
+        padding: 50px;
+        grid-template-columns: 300px 300px 300px;
+    }
+    
+    .grid-projects > div {
+        transition: all 0.2s;
+        border: 5px solid white;
+        background-color: transparent;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 30px;
+        height :300px;
+        width: 300px;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
+    }.grid-projects > div:hover{
+        animation: float 3s ease-in-out infinite;
+        border: 5px solid rgb(109, 109, 109);
+        background-color: transparent;
+    }
 }
-
-.grid-projects{
-    justify-content: space-evenly;
-    max-width: 50%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 50px;
-    background-color: transparent;
-    padding: 50px;
-    grid-template-columns: 300px 300px 300px;
-}
-
-.grid-projects > div {
-    transition: all 0.2s;
-    border: 5px solid white;
-    background-color: transparent;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 30px;
-    height :300px;
-    width: 300px;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
-}.grid-projects > div:hover{
-    animation: float 3s ease-in-out infinite;
-    border: 5px solid rgb(109, 109, 109);
-    background-color: transparent;
-}
-
 .hideProject{
     display: none;
 }
@@ -46,6 +46,7 @@
     transform: translatey(20%);
     margin:auto;
 }
+
 .tinkerCad .game{
     background-color: white;
     padding-top: -2px;
@@ -125,16 +126,34 @@ p2{
 
 
 
-@media(max-width: 700px){
+@media(max-width: 500px){
+    .projects-container{
+        padding-top: 100px;
+    }
     .grid-projects{
         justify-content: space-evenly;
         max-width:90%;
         margin: auto;
         display: grid;
-        grid-gap: 20px;
-        Padding:0;
+        grid-gap: 10px;
+        Padding:10px;
         background-color: transparent;
         grid-template-columns: auto auto;
+    }
+    .grid-projects > div {
+        transition: all 0.2s;
+        border: 2px solid white;
+        background-color: transparent;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 30px;
+        height :300px;
+        width: 300px;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
+    }.grid-projects > div:hover{
+        animation: float 3s ease-in-out infinite;
+        border: 5px solid rgb(109, 109, 109);
+        background-color: transparent;
     }
     .grid-projects > div{
         width: 100%;
@@ -147,15 +166,17 @@ p2{
    p2{
         font-size: 3vw;
     }
+    .projects-container #showMore{
+        margin-top: 20px;
+        border-radius: 10px;
+    }
     .page #proj.projects-container.hide{
-        height: 120vh;
-;
+        min-height: 600px;
+        height: 100vh;
     }
     .page #proj.projects-container.show{
-        height: 150vh;
-    }
-    .projects-container #showMore{
-        margin-top: 100px;
+        min-height: 600px;
+        height: 130vh;
     }
 }
 
@@ -213,3 +234,6 @@ p2{
     font-size: 1rem;
 }
 
+.github-proj{
+    transform: translateY(15px);
+}

@@ -48,6 +48,7 @@ html{
   background-repeat: no-repeat;
   background-size:cover;
   min-height: 500px;
+  background-image: linear-gradient(to bottom, transparent 0%, #a5d1b5 100%);
 }
 /* Background end*/
 .page{
@@ -87,6 +88,11 @@ html{
   margin-left: 2rem;
 }
 
+@media(max-width:500px){
+  .logo a{
+    margin-left: 0rem;
+  }
+}
 @keyframes wavey {
   50% {
     transform: scale(1.1);

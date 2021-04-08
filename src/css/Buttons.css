@@ -94,6 +94,8 @@
       padding-top: 3rem;
       flex-direction:column;
       align-items: flex-end;
+      background-color: rgb(129, 129, 129,0.2);
+      border-radius:10px;
     }
     .nav-buttons .button{
       border-color: transparent;

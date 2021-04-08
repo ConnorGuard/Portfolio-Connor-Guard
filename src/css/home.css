@@ -1,55 +1,82 @@
-#home-page{
-    transition: all 4s ease-in-out;
-}
-.homePage{
-    font-family: 'Roboto', sans-serif;
-    padding-left: 40%;
-    text-align:center;
-    font-size: 5em;
-    display:flex;
-    max-width: 100%;
-    margin: auto;
-    padding-top: 10%;
-    transition: all 4s ease-in-out;
-    text-align: center;
-}
-.grid-home .image.connor{
-    margin-top: 30%;
-    margin-left: -18%;
-    max-height :600px;
-    max-width:500px;
-    height: auto;
-    width:100%;
-    display: flex;
-    border: 5px solid white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-}
-.grid-home{
-    display: grid;
-    grid-template-columns: 50% 30% 20%;
+@media(min-width:500px){
+    #home-page{
+        transition: all 4s ease-in-out;
+        align-items: center;
+    }
+    .homePage{
+        font-family: 'Roboto', sans-serif;
+        padding-left: 40%;
+        text-align:center;
+        font-size: 5em;
+        display:flex;
+        max-width: 100%;
+        margin: auto;
+        padding-top: 10%;
+        transition: all 4s ease-in-out;
+        text-align: center;
+    }
+    .grid-home .image.connor{
+        margin-top: 30%;
+        margin-left: -18%;
+        max-height :600px;
+        max-width:500px;
+        height: auto;
+        width:100%;
+        display: flex;
+        border: 5px solid white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    }
+    .grid-home{
+        display: grid;
+        grid-template-columns: 50% 30% 20%;
+    }
+    
+    .homePage h3 {
+        font-size: 7vw;
+        display: flex;
+        margin-top: 15%;
+        color: rgb(0, 0, 0);
+        position:relative;
+        text-align: left;
+        z-index: 1;
+        max-width: 50%;
+    } 
+    .toProjects{
+        padding-top:120%;
+        display: flex;
+        align-items: center;
+        margin-left: -170%;
+    }
+    
+    .toProjects button{ 
+        display: flex;
+        align-items: center;
+        padding:0.35em 1.2em;
+        border:2px solid white;
+        margin:0 0.3em 0.3em 0;
+        border-radius:0em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family: 'Roboto', sans-serif;
+        font-weight:500;
+        color :white;
+        background-color: transparent;
+        text-align:center;
+        font-size: 1.5em;
+        transition: all 0.2s;
+        z-index: 5;
+    }
+    .toProjects button:hover{
+        background-color: white;
+        color: rgb(0, 0, 0);
+    }
+    
+    .toProjects button:focus {
+        outline: none;
+    }
 }
 
-.homePage h3 {
-    font-size: 7vw;
-    display: flex;
-    margin-top: 15%;
-    color: rgb(0, 0, 0);
-    position:relative;
-    text-align: left;
-    z-index: 1;
-    max-width: 50%;
-} 
-
-.Icon .connor{
-    transition: all 4s ease-in-out;
-    display: inline;
-    margin-left: -15%;
-    height: 115%;
-    width: 115%;
-    object-fit: cover;
-    position:relative;
-}
 
 @media(max-width: 1000px){
     .grid-home{
@@ -70,54 +97,57 @@
     .toProjects.button button{ 
         border: 1px solid white;
     }
+
+    
 }
   
-  
+/*for mobile*/
 @media(max-width: 500px){
-    .grid-home{
-        grid-template-columns: auto;
-        align-items: center;
-        margin:auto;
-    }
-    
-    .homePage{
-        margin-left: 27%;
-    } 
-
-    a{
-        margin-left: 15%;
-    }
-    .homePage{
-        padding-left: 0;
-    }
     .grid-home .image.connor{
-        max-height :600px;
-        max-width:500px;
-        height: auto;
-        width:80%;
-        margin: auto;
-        display: flex;
+       display: none;
     }
-    
+    #home{
+        background-image: url("connor.jpg");
+        background-repeat: no-repeat;
+        background-size:cover; 
+    }
+    #home-page{
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 120vh;
+        padding-top:0.1%;
+    }
     .homePage h3 {
-        font-size: 10vw;
-        display: flex;
-        margin-top: 1%;
+        font-size: 15vw;
+        margin-top: 35%;
+        margin-left: 10%;
         color: rgb(0, 0, 0);
         position:relative;
-        text-align: center;
+        text-align: left;
         z-index: 1;
         max-width: 50%;
     } 
-
-    .toProjects{
+    .toProjects.button button{
+        margin-top: 30%;
         display: flex;
         align-items: center;
+        padding:0.35em 1.2em;
+        border:1px solid black;
+        border-radius:0em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family: 'Roboto', sans-serif;
+        font-weight:500;
+        color :black;
+        background-color: transparent;
+        text-align:center;
+        font-size: 3em;
+        transition: all 0.2s;
+        z-index: 5;
     }
-    a{
-        align-items: center;
+    .toProjects button:hover{
+        background-color: black;
+        color: rgb(255, 255, 255);
     }
-    
 }
 
 @keyframes float {
@@ -133,39 +163,6 @@
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
-}
-.toProjects{
-    padding-top:120%;
-    display: flex;
-    align-items: center;
-    margin-left: -170%;
-}
-
-.toProjects button{ 
-    display: flex;
-    align-items: center;
-    padding:0.35em 1.2em;
-    border:2px solid white;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family: 'Roboto', sans-serif;
-    font-weight:500;
-    color :white;
-    background-color: transparent;
-    text-align:center;
-    font-size: 1.5em;
-    transition: all 0.2s;
-    z-index: 5;
-}
-.toProjects button:hover{
-    background-color: white;
-    color: rgb(0, 0, 0);
-}
-
-.toProjects button:focus {
-    outline: none;
 }
 
 @keyframes moveArrow {

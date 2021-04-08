@@ -14,8 +14,10 @@ function Nav(){
       setBtn((window.innerWidth>tNav)? false: true);
       setToggle((window.innerWidth>tNav)? true: false);
     })
+
+
     return(
-    <div class = "nav">
+    <div class = "nav" >
       <div class ="logo"> <a href = "#home">CONNOR {(logoOn) ? <span href = "#">GUARD</span>: null} </a> </div> 
       <div class = "content"> 
       {(hideBtn)?   <a class = "toggle-button" onClick={() => {setToggle(!isToggleOn)}}>

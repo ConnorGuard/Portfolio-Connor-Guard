@@ -3,9 +3,6 @@ import React, { useEffect, useState } from 'react';
 export default Projects;
 
 function Projects() {
-    const [TinkerOn, toggleTinker] = useState(false);
-    const [pWebOn, togglepWeb] = useState(false);
-    const [prototypeOn, togglePrototype] = useState(false);
     const [hovering, setHover] = useState(false);
     const [showMore, setShowMore] = useState(false);
     const [describe, getdescription] = useState();
@@ -13,10 +10,6 @@ function Projects() {
 
     return (
         <div id="proj" class={showMore ? "projects-container show" : "projects-container hide"} onMouseMove={handleMouseMove}>
-            {(TinkerOn) ? <TinkerCad exit={TinkerOn} toggle={toggleTinker} /> : null}
-            {(pWebOn) ? <Portfolio exit={pWebOn} toggle={togglepWeb} /> : null}
-            {(prototypeOn) ? <AppPrototype exit={prototypeOn} toggle={togglePrototype} /> : null}
-
             <div class="grid-projects" id="g-proj" >
 
                 {(hovering) ? <Description x={x} y={y} describe={describe} /> : null}
@@ -27,25 +20,25 @@ function Projects() {
                         <button class="button" onClick={() => { }}> Launch</button>
                         <a href="https://github.com/ConnorGuard/Conways-Game-of-life" target="popup"> <GithubBlack /> </a>
                     </div>
-                    <div><p2>C#</p2></div>
+                    <div><br></br><p2>C#</p2></div>
                 </div>
 
                 <div class="AG" onMouseEnter={() => { setHover(true); getdescription(decribePMAG); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Pattern Matching Arduino Game</p>
-                    <button class="button" onClick={() => { toggleTinker(!TinkerOn) }}> Launch</button>
+                    <a href="https://www.tinkercad.com/embed/8nOrSGffqya?editbtn=1" target="popup"><button class="button"> Launch</button></a>
                     <a href="https://github.com/ConnorGuard/PatternMatchGameArduino" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>C</p2>
                 </div>
 
                 <div class="pWeb" onMouseEnter={() => { setHover(true); getdescription(decribePortfolio); }} onMouseLeave={() => { setHover(false) }}>
                     <p>Portfolio<br></br>website</p>
-                    <button class="button" onClick={() => { togglepWeb(!pWebOn) }}> Launch</button>
+                    <button class="button"> Already here!</button>
                     <a href="https://github.com/ConnorGuard/Portfolio-Connor-Guard" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>React.JS &nbsp; HTML &nbsp; CSS</p2>
                 </div>
 
                 <div Class={(showMore) ? "TP ShowProject" : "TP ShowProject"} onMouseEnter={() => { setHover(true); getdescription(decribePrototype); }} onMouseLeave={() => { setHover(false) }}> <p>Travel Planner<br></br>design challenge</p>
-                    <button class="button" onClick={() => { togglePrototype(!prototypeOn) }}> Launch</button>
+                <a href="https://connorguard259487.invisionapp.com/console/share/R92EN0X5MK/477579721" target="popup"><button class="button" > Launch</button></a>
                     <a href="https://github.com/ConnorGuard/Travel-Planner-Design" target="popup"> <GithubBlack />  </a>
                     <p2><br></br><br></br>Photoshop invisionapp </p2></div>
 
@@ -77,7 +70,7 @@ function Projects() {
                     <p2><br></br><br></br>Java &nbsp; SQL</p2>
                 </div>
 
-                <div Class={(showMore) ? "p9 hideProject" : "hideProject"}></div>
+                <div Class={(showMore) ? "hideProject" : "hideProject"}></div>
             </div>
             <button id="showMore" class="button" onClick={() => { setShowMore(!showMore); }}>{(showMore) ? "Show Less" : "Show More"}</button>
         </div>
@@ -166,39 +159,6 @@ const decribeRaspberry = () => {
             <br></br>the idea as text and audio in their Email.
         </p>
     )
-}
-
-function Portfolio(props) {
-    return (
-        <div class="display-proj portfolio">
-            <button class="button" onClick={() => { props.toggle(!props.exit) }}> Exit</button>
-            <iframe class="webSite" width="725" height="453"
-                src="http://localhost:3000"
-                frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
-            </iframe>
-        </div>
-    )
-}
-function TinkerCad(props) {
-    return (
-        <div class="display-proj tinkerCad">
-            <button class="button" onClick={() => { props.toggle(!props.exit) }}> Exit</button>
-            <iframe class="game" width="725" height="453"
-                src="https://www.tinkercad.com/embed/8nOrSGffqya?editbtn=1"
-                frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
-            </iframe>
-        </div>);
-}
-
-function AppPrototype(props) {
-    return (
-        <div class="display-proj AppPrototype">
-            <button class="button" onClick={() => { props.toggle(!props.exit) }}> Exit</button>
-            <iframe class="prototype" width="925" height="653"
-                src="https://connorguard259487.invisionapp.com/console/share/R92EN0X5MK/477579721"
-                frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
-            </iframe>
-        </div>);
 }
 
 const useMove = () => {
