@@ -5,7 +5,7 @@ function AboutMe() {
     <div class="about-container">
       <div class="about-left">
         <div class="info-left">
-          <img class="connorimg" src="connorAbout.jpg"></img>
+          <img class="connorimg" src="connor.jpg"></img>
           <p href="#contact">Available for work</p>
           <button class="button" onClick={() => { }}>My resume</button>
           <button class="button" onClick={() => { window.location.href = '#contact'; }}>Lets work</button>

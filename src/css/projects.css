@@ -19,7 +19,7 @@
     .grid-projects > span > div {
         margin-top: 40px;
         transition: all 0.7s;
-        border: 5px solid white;
+        border: 3px solid white;
         background-color: transparent;
         border-radius: 10px;
         text-align: center;
@@ -27,11 +27,14 @@
         height :150px;
         width: 300px;
         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
+        background-image: linear-gradient(120deg, rgba(187, 255, 201, 0.5) 0%, rgba(187, 247, 255, 0.5) 100%);
+    
     }.grid-projects> span > div:hover{
         animation: float 3s ease-in-out infinite;
         border: 5px solid rgb(109, 109, 109);
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
         background-color: transparent;
-        height :350px;
+        height :370px;
     }
     .projects-container #showMore{
         margin-top: 50px;
@@ -53,7 +56,7 @@
         height: 200vh;
     }
     .page #proj.projects-container.show{
-        height:  250vh;
+        height:  270vh;
     }
 
 }
@@ -67,35 +70,13 @@
     bottom: 0;
     top:0;
     left: 0;
-    right:0;   transition: all 0.7s;
+    right:0;   
+    transition: all 0.7s;
     transform: translatey(20%);
     margin:auto;
 }
 
-.tinkerCad .game{
-    background-color: white;
-    padding-top: -2px;
-}
 
-.AppPrototype .prototype{
-    background-color: white;
-    padding-top: -2px;
-}
-.AppPrototype .button{
-    background-color: transparent ;
-    border-radius: 50px;
-}
-.tinkerCad .button{
-    background-color: transparent ;
-    border-radius: 50px;
-}
-.portfolio .webSite{
-    background-color: white ;
-}
-.portfolio .button{
-    background-color: transparent ;
-    border-radius: 50px;
-}
 .grid-projects .button{
     border: 2px solid black;
     font-size: 1rem;
@@ -117,6 +98,7 @@
 
 p2{
     font-size: 1rem;
+    text-align: center;
 }
 
 @media(min-width:1000px){

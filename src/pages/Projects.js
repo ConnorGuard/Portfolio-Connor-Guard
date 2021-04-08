@@ -12,7 +12,7 @@ function Projects() {
         <div id="proj" class={showMore ? "projects-container show" : "projects-container hide"} onMouseMove={handleMouseMove}>
             <div class="grid-projects" id="g-proj" >
                 <span class="left-grid">
-                    <div class="GOL" onMouseEnter={() => { setHover("GOL"); getdescription(decribeGOL); }} onMouseLeave={() => { setHover(false) }}>
+                    <div class="GOL ShowProject" onMouseEnter={() => { setHover("GOL"); getdescription(decribeGOL); }} onMouseLeave={() => { setHover(false) }}>
                         <p>Game Of Life</p>
                         <div>
                             {(hovering == "GOL") ?
@@ -25,7 +25,7 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div class="AG" onMouseEnter={() => { setHover("AG"); getdescription(decribePMAG); }} onMouseLeave={() => { setHover(false) }}>
+                    <div class="AG ShowProject" onMouseEnter={() => { setHover("AG"); getdescription(decribePMAG); }} onMouseLeave={() => { setHover(false) }}>
                         <p>Pattern Matching <br></br>Arduino Game</p>
                         {(hovering == "AG") ? <span>
                             <a href="https://www.tinkercad.com/embed/8nOrSGffqya?editbtn=1" target="popup"><button class="button"> Launch</button></a>
@@ -47,7 +47,7 @@ function Projects() {
                 </span>
 
                 <span class="center-grid">
-                    <div class="pWeb" onMouseEnter={() => { setHover("pWeb"); getdescription(decribePortfolio); }} onMouseLeave={() => { setHover(false) }}>
+                    <div class="pWeb ShowProject" onMouseEnter={() => { setHover("pWeb"); getdescription(decribePortfolio); }} onMouseLeave={() => { setHover(false) }}>
                         <p>Portfolio<br></br>website</p>
                         {(hovering == "pWeb") ? <span>
                             <button class="button"> Already here!</button>
@@ -69,24 +69,26 @@ function Projects() {
 
                     <div Class={(showMore) ? "ATP ShowProject" : "ATP hideProject"} onMouseEnter={() => { setHover('ATP'); getdescription(decribeATP); }} onMouseLeave={() => { setHover(false) }}>
                         <p>Asset Trading<br></br>Platform</p>
-                        {(hovering == "ATP") ? <span>
-                            <button class="button" onClick={() => { }}> Launch</button>
-                            <a href="" target="popup"> <GithubBlack />  </a>
-                            <Description describe={describe} hovering={hovering} />
-                        </span>
+                        {(hovering == "ATP") ?
+                            <span>
+                                <button class="button" onClick={() => { }}> Launch</button>
+                                <a href="" target="popup"> <GithubBlack />  </a>
+                                <Description describe={describe} hovering={hovering} />
+                            </span>
                             : null}
                     </div>
                     <button id="showMore" class="button" onClick={() => { setShowMore(!showMore); }}>{(showMore) ? "Show Less" : "Show More"}</button>
                 </span>
 
                 <span class="right-grid">
-                    <div class="ideaPi" onMouseEnter={() => { setHover("ideaPi"); getdescription(decribeRaspberry); }} onMouseLeave={() => { setHover(false) }}>
+                    <div class="ideaPi ShowProject" onMouseEnter={() => { setHover("ideaPi"); getdescription(decribeRaspberry); }} onMouseLeave={() => { setHover(false) }}>
                         <p>Raspberry Pi<br></br>challenge</p>
-                        {(hovering == "ideaPi") ? <span>
-                            <button class="button" onClick={() => { }}> Launch</button>
-                            <a href="https://github.com/ConnorGuard/IdeaPi" target="popup"> <GithubBlack />  </a>
-                            <Description describe={describe} hovering={hovering} />
-                        </span>
+                        {(hovering == "ideaPi") ?
+                            <span>
+                                <button class="button" onClick={() => { }}> Launch</button>
+                                <a href="https://github.com/ConnorGuard/IdeaPi" target="popup"> <GithubBlack />  </a>
+                                <Description describe={describe} hovering={hovering} />
+                            </span>
                             : null}
                     </div>
 
@@ -130,7 +132,7 @@ const decribeGOL = () => {
             observes how it evolves.
             <br></br>
             <br></br>
-            <p2>C#</p2>
+            <p2> &nbsp;C#</p2>
         </p>
     )
 }
@@ -170,9 +172,7 @@ const decribePMAG = () => {
             A pattern matching game made with an Arduino!
             This project developed my embedded systems and C programming skills.
             1) Launch the app 2) start simulation 3) press any button to play.
-            <br></br>
-            <br></br>
-            <p2>C</p2>
+            <p2><br></br><br></br>C</p2>
         </p>
     )
 }
@@ -191,8 +191,9 @@ const decribePrototype = () => {
 const decribeRaspberry = () => {
     return (
         <p>
-            IdeaPi, is a mini project that I worked on to develop my knowledge into APIs.
-            This application allows the user to speak a new idea into a microphone, then&nbsp;receive
+            IdeaPi, is a mini project that I worked on to&nbsp;develop
+            my knowledge into APIs.&nbsp;This application allows the 
+            user to speak a&nbsp;new idea into a microphone, then receive
             the idea as text and audio in their Email.
             <p2><br></br><br></br>Python Google & SendGrid API</p2>
         </p>

@@ -5,6 +5,7 @@
     margin :auto;
   }
   #contact-form{
+    background-image: linear-gradient(120deg, rgba(187, 255, 201, 0.5) 0%, rgba(187, 247, 255, 0.5) 100%);
     margin-top:10%;
     display: flex;
     align-items: center;
@@ -15,7 +16,7 @@
     background-color: transparent;
     padding : 40px;
     border-radius:10px;
-    border: 5px solid white;
+    border: 3px solid white;
     animation: float 6s ease-in-out infinite;
     position:relative;
     box-shadow: 1px 2px 9px;
