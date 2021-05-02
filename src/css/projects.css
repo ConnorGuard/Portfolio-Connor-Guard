@@ -1,7 +1,6 @@
 @media(min-width:00px){
     #proj{
         align-items: center;
-        padding-top:100px;
     }
     
     .grid-projects{
@@ -19,7 +18,7 @@
     .grid-projects > span > div {
         margin-top: 40px;
         transition: all 0.7s;
-        border: 3px solid white;
+        border: 4px solid white;
         background-color: transparent;
         border-radius: 10px;
         text-align: center;
@@ -27,7 +26,7 @@
         height :150px;
         width: 300px;
         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
-        background-image: linear-gradient(120deg, rgba(187, 255, 201, 0.5) 0%, rgba(187, 247, 255, 0.5) 100%);
+        background-image: linear-gradient(120deg,  rgba(187, 247, 255, 0.2) 0%, rgba(187, 247, 255, 0.2) 100%);
     
     }.grid-projects> span > div:hover{
         animation: float 3s ease-in-out infinite;
@@ -35,6 +34,10 @@
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
         background-color: transparent;
         height :370px;
+    }
+    .grid-projects > span > div p{
+        max-width:90%;
+        margin:auto;
     }
     .projects-container #showMore{
         margin-top: 50px;
@@ -95,10 +98,21 @@
     text-align: center;
     align-items: center;
 }
-
-p2{
-    font-size: 1rem;
+#proj h1{
+    font-size: 2rem;
+    font-weight: normal;
     text-align: center;
+}
+
+#proj p{
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+#proj .programming-languages{
+    font-size: 0.9rem;
+    text-align: left;
+    font-weight: bold;
 }
 
 @media(min-width:1000px){

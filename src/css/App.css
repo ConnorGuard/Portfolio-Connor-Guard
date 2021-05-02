@@ -10,7 +10,7 @@ html{
 }
 
 .App {
-  background-image: linear-gradient( 135deg, #ffeeda 30%, #e2fbeb 100%);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -22,11 +22,12 @@ html{
 /* Background*/
 
 .page .home{
-  height: 100vh;
+  height: 20vh;
   background-repeat: no-repeat;
   background-position:50% 50%;
   background-size:cover;
-  min-height: 500px;
+  min-height: 250px;
+
 }
 
 .page .projects-container{
@@ -43,12 +44,12 @@ html{
 }
 
 .page .contact{
-
+  background-image: linear-gradient(transparent 30%, rgb(126, 207, 218) 120%);
   height: 120vh;
   background-repeat: no-repeat;
   background-size:cover;
   min-height: 500px;
-  background-image: linear-gradient(to bottom, transparent 0%, #a5d1b5 100%);
+  
 }
 /* Background end*/
 .page{
@@ -60,39 +61,6 @@ html{
   background-repeat: no-repeat;
 }
 
-.nav{
-  background-color:transparent;
-  padding: 2rem;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-.nav{
-  display: flex;
-  justify-content:space-between;
-  max-width: 90%;
-  margin: auto;
-  z-index: 2; /*bring to front */
-}
-
-.nav .contents{
-  display: flex;
-  justify-content:space-between;
-}
-.logo a{
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 2em;
-  float:left;
-  text-align: left;
-  margin-left: 2rem;
-}
-
-@media(max-width:500px){
-  .logo a{
-    margin-left: 0rem;
-  }
-}
 @keyframes wavey {
   50% {
     transform: scale(1.1);

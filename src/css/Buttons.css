@@ -23,19 +23,7 @@
       margin:0.4em auto;
     }
   }
-  .bouncy01{
-    animation:bouncy 5s infinite linear;
-    position:relative;
-    }
-    @keyframes bouncy {
-      0%{top:0em}
-      40%{top:0em}
-      43%{top:-0.9em}
-      46%{top:0em}
-      48%{top:-0.4em}
-      50%{top:0em}
-      100%{top:0em;}
-  }
+ 
   .button.home{
     animation-delay:0.07s
   }
@@ -76,36 +64,3 @@
       background-color :black;
   }
 
-  .nav-buttons{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-  }
-  .nav-buttons .button:hover{
-    font-size: 1.2em;
-    color:rgb(129, 129, 129)
-  }
-
-  @media(max-width: 700px){
-    .toggle-button .bar{
-      display: flex;
-    }
-    .nav-buttons{
-      padding-top: 3rem;
-      flex-direction:column;
-      align-items: flex-end;
-      background-color: rgb(129, 129, 129,0.2);
-      border-radius:10px;
-    }
-    .nav-buttons .button{
-      border-color: transparent;
-    }
-    .contents{
-      display:flex;
-      justify-content:space-between;
-      align-items: flex-start;
-    }
-    .nav-buttons.active{
-      display: flex;
-    }
-  }

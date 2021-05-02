@@ -1,6 +1,7 @@
-export default AboutMe;
+import FadeIn from 'react-fade-in';
 
-function AboutMe() {
+
+export default  function AboutMe() {
   return (
     <div class="about-container">
       <div class="about-left">

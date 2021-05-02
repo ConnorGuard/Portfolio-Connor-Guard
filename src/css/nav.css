@@ -1,0 +1,89 @@
+.nav-buttons{
+    display: flex;
+    align-items: left;
+    text-align: left;
+  }
+  .nav-buttons .button:hover{
+    color:rgb(129, 129, 129)
+  }
+
+  .nav{
+    background-color:transparent;
+    padding: 2rem;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    right:0;
+    width: 600px; /* Full width */
+  }
+  .nav{
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    z-index: 2; /*bring to front */
+  }
+  
+  .nav .contents{
+    display: flex;
+  }
+
+  
+  .logo a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 2em;
+    float:left;
+    text-align: left;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 1.5rem; /* Position the navbar at the top of the page */
+    left:2rem;
+    z-index: 3; /*bring to front */
+  }
+  .nav-buttons .button.resume{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }.nav-buttons .button.resume:hover{
+    background-color:  black;
+    color: rgb(255, 255, 255);
+  }
+
+  @media(max-width: 800px){
+    .toggle-button .bar{
+      display: flex;
+    }
+    .nav-buttons{
+      padding-top: 3rem;
+      flex-direction:column;
+      align-items: flex-end;
+      background-color: rgb(129, 129, 129,0.2);
+      border-radius:10px;
+    }
+    .nav-buttons .button{
+      border-color: transparent;
+    }
+    .contents{
+      position: fixed; /* Set the navbar to fixed position */
+      top: 2rem; /* Position the navbar at the top of the page */
+      left:2rem;
+    }
+    .nav{
+      max-width: 100px;
+    }
+    .nav-buttons{
+      margin-left:-20px;
+    }
+
+    .nav-buttons .button.resume{
+        border: 1px solid transparent;
+      }.nav-buttons .button.resume:hover{
+        background-color:  transparent;
+        color: rgb(129, 129, 129);
+      }
+  }
+
+  @media(max-width:500px){
+    .logo a{
+      margin-left: 2rem;
+    }
+  }

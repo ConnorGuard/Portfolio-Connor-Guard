@@ -3,7 +3,7 @@
 }
 
 .aboutme-container{
- border: 3px solid white;
+ border: 4px solid white;
  color:  rgb(0, 136, 122);
  margin: auto;
  border-radius: 10px;
@@ -11,7 +11,7 @@
  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);    
  margin-left: 50px;
  width: 680px;
- background-image: linear-gradient(120deg, rgba(187, 255, 201, 0.5) 0%, rgba(187, 247, 255, 0.5) 100%);
+ background-image: linear-gradient(120deg,  rgba(187, 247, 255, 0.2) 0%, rgba(187, 247, 255, 0.2) 100%);
 }
 
 .aboutme-content{
@@ -37,6 +37,7 @@
     margin-bottom: 10px;
     border: 2px solid black;
     font-size: 1rem;
+    
 }
 .about-left .button:hover{
     color: white;
@@ -62,7 +63,7 @@
 .connorimg{
     width:280px; /* you can use % */
     height: auto;
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: scaleX(-1);    

@@ -5,19 +5,15 @@
 .Title{
     word-wrap: break-word;
     z-index: 1;
-    text-align: left;
+    text-align: center;
     align-items: center;
     line-height: 0.3;
-    margin-left: 20%;
-    margin-right: 35%;
-    padding-top: 300px;
+    padding-top: 150px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 100px;
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 }
 #home-page h1{
     word-wrap: break-word;
@@ -98,7 +94,7 @@
     }
     .Title{
         padding-top: 200px;
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
     }
     #home-page h1{
