@@ -11,7 +11,6 @@
  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);    
  margin-left: 50px;
  width: 680px;
- background-image: linear-gradient(120deg,  rgba(187, 247, 255, 0.2) 0%, rgba(187, 247, 255, 0.2) 100%);
 }
 
 .aboutme-content{
@@ -47,15 +46,15 @@
 }
 
 .about h1{
-    color: black;
+    color: rgb(42, 64, 85);
     text-align: left;
 }
 .about h3{
-    color: black;
+    color: rgb(42, 64, 85);
     text-align: left;
 }
 .about p{
-    color: rgb(104, 104, 104);
+    color: rgb(93, 123, 151);
     text-align: left;
     font-size: 1.1rem;
     line-height: 1.5;

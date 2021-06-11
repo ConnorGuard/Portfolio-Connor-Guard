@@ -2,6 +2,9 @@
 .homePage{
     font-family: 'Roboto', sans-serif;
 }
+#home{
+    height: 30vh;
+}
 .Title{
     word-wrap: break-word;
     z-index: 1;
@@ -11,22 +14,25 @@
     padding-top: 150px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 500px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 #home-page h1{
     word-wrap: break-word;
     display: block;
-    font-size: 5vw;
+    font-size: 3vw;
     line-height: 0;
+    color: rgb(42, 64, 85);
 }
 #home-page h2{
+    padding-top: 20px;
     word-wrap: break-word;
     display: block;
     font-size: 1.8rem;
-    font-weight:lighter;
+    font-weight:normal;
     margin-left: 5px;
+    color: rgb(42, 64, 85);
 }
 #home-page h3{
     word-wrap: break-word;
@@ -146,4 +152,8 @@
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+.Front-page{
+    background-image: linear-gradient( rgb(126, 207, 218) -60%, transparent 100%);
 }

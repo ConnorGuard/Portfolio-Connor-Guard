@@ -18,20 +18,17 @@
     .grid-projects > span > div {
         margin-top: 40px;
         transition: all 0.7s;
-        border: 4px solid white;
-        background-color: transparent;
+        border: 3px solid white;
+        background-color: rgb(93, 123, 151,0.2);
         border-radius: 10px;
         text-align: center;
         font-size: 30px;
         height :150px;
-        width: 300px;
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); 
-        background-image: linear-gradient(120deg,  rgba(187, 247, 255, 0.2) 0%, rgba(187, 247, 255, 0.2) 100%);
     
     }.grid-projects> span > div:hover{
         animation: float 3s ease-in-out infinite;
         border: 5px solid rgb(109, 109, 109);
-        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        background-image: linear-gradient(120deg, #89f6fea6 0%, #66a6ff9f 100%);
         background-color: transparent;
         height :370px;
     }
@@ -41,7 +38,14 @@
     }
     .projects-container #showMore{
         margin-top: 50px;
+        border-radius: 50px;  
+        border-color: rgb(93, 123, 151) ;     
+        color: rgb(93, 123, 151) ;   
     }
+     .projects-container #showMore:hover{
+        background-color: rgb(93, 123, 151) ;     
+        color: rgb(255, 255, 255) ; 
+     }
 }
 
 @media(max-width:1000px){
@@ -98,12 +102,21 @@
     text-align: center;
     align-items: center;
 }
-#proj h1{
+.grid-projects h1{
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: lighter;
     text-align: center;
 }
-
+#proj .title{
+    padding-top: 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 52%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: -60px;
+    color: rgb(93, 123, 151);
+}
 #proj p{
     font-size: 0.9rem;
     text-align: left;
@@ -160,3 +173,56 @@
     transform: translateY(10px);
 }
 
+.GOL.ShowProject{
+    background-image: url(../images/family.png);
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.ideaPi.ShowProject{    
+    background-image: url(../images/pie.png);
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.pWeb.ShowProject{
+    background-image: url(../images/profile.png);
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.AG.ShowProject{
+    background-image: url(../images/pattern.png);
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.webS.ShowProject{
+    background-image: url(../images/shopping.png);
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.ATP.ShowProject{
+    background-image: url(../images/trading.png);
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.TP.ShowProject{
+    background-image: url(../images/calendar.png);
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.WP.ShowProject{
+    background-image: url(../images/happiness.png);
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}

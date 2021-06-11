@@ -2,13 +2,11 @@
 export default function Home() {
     return (
         <div id="home-page">
-            <div class="grid-home">
-                <div class="Title">
-                    <h2>Hi👋🏼</h2>
-                    <h2>I'm a Brisbane-based software Developer</h2>
-
-                </div>
+            <div class="Title">
+                <h1>G'day, I'm Connor</h1>
+                <h2>a Brisbane-based Software Developer</h2>
             </div>
+
         </div>
     );
 }

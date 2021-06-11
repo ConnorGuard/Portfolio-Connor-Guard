@@ -1,10 +1,9 @@
-.nav-buttons{
-    display: flex;
-    align-items: left;
-    text-align: left;
+.nav-buttons .button{
+
+    color: rgb(42, 64, 85);
   }
   .nav-buttons .button:hover{
-    color:rgb(129, 129, 129)
+    color: rgb(92, 130, 167);
   }
 
   .nav{
@@ -28,23 +27,24 @@
 
   
   .logo a{
-    color: rgb(0, 0, 0);
+    color: rgb(42, 64, 85);
     font-weight: bold;
     font-size: 2em;
     float:left;
     text-align: left;
     position: fixed; /* Set the navbar to fixed position */
-    top: 1.5rem; /* Position the navbar at the top of the page */
+    top: 2rem; /* Position the navbar at the top of the page */
     left:2rem;
     z-index: 3; /*bring to front */
+    color: rgb(42, 64, 85);
   }
   .nav-buttons .button.resume{
-    border: 1px solid black;
-    border-radius: 2px;
+    border: 1px solid rgb(42, 64, 85);
+    border-radius:10px;
     padding-top: 10px;
     padding-bottom: 10px;
   }.nav-buttons .button.resume:hover{
-    background-color:  black;
+    background-color:  rgb(42, 64, 85);
     color: rgb(255, 255, 255);
   }
 

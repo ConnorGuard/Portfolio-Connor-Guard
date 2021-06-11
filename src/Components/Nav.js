@@ -33,7 +33,6 @@ function Nav(){
     </div>
   )
   }
-  
   function Navbuttons(){
       return(  
       <nav class = "nav-buttons">
@@ -41,6 +40,6 @@ function Nav(){
         <button class = "button projects" onClick={() => {window.location.href='#proj';}}>PROJECTS</button>
         <button class = "button about" onClick={() => {window.location.href='#about';}}>ABOUT</button>
         <button class = "button contact" onClick={() => {window.location.href='#contact';}}> CONTACT </button>
-        <button class = "button resume" onClick={() => {window.location.href='#contact';}}> RESUME </button>
+        <a href="https://drive.google.com/file/d/1LZJ27QxnK6YilP6gt8VT02HrJ2bkhauh/view" target="_blank"><button class = "button resume"> RESUME </button></a>
       </nav>)
   }

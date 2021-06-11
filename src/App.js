@@ -25,10 +25,12 @@ function App() {
 function Pages() {
   return (
     <div class="page">
-      <div id="home" class="home">
-        <Home />
+      <div className="Front-page">
+        <div id="home" class="home">
+          <Home />
+        </div>
+        <Projects />
       </div>
-      <Projects />
       <div id="about" class="about">
         <AboutMe />
       </div>

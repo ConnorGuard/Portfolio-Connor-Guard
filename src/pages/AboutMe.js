@@ -8,7 +8,7 @@ export default  function AboutMe() {
         <div class="info-left">
           <img class="connorimg" src="connor.jpg"></img>
           <p href="#contact">Available for work</p>
-          <button class="button" onClick={() => { }}>My resume</button>
+          <a href="https://drive.google.com/file/d/1LZJ27QxnK6YilP6gt8VT02HrJ2bkhauh/view" target="_blank"><button class="button">My resume</button></a>
           <button class="button" onClick={() => { window.location.href = '#contact'; }}>Lets work</button>
         </div>
       </div>
