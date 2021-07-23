@@ -1,4 +1,4 @@
-import { db } from '../Components/firebase.js';
+//import { db } from '../Components/firebase.js';
 import React, { useEffect, useState } from 'react';
 
 export default Contact;
@@ -12,17 +12,17 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoader(true);
-        db.collection('contacts').add({
-            name:name,
-            email: email,
-            message: message,
-        }).then(()=>{
-            alert("Message has been submitted")
-            setLoader(false);
-        }).catch((error)=>{
-            alert(error.message)
-            setLoader(false);
-        })
+        // db.collection('contacts').add({
+        //     name:name,
+        //     email: email,
+        //     message: message,
+        // }).then(()=>{
+        //     alert("Message has been submitted")
+        //     setLoader(false);
+        // }).catch((error)=>{
+        //     alert(error.message)
+        //     setLoader(false);
+        // })
         setName("")
         setEmail("")
         setMessage("")
