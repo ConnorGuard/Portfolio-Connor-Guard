@@ -117,16 +117,6 @@
     margin-bottom: -60px;
     color: rgb(93, 123, 151);
 }
-#proj p{
-    font-size: 0.9rem;
-    text-align: left;
-}
-
-#proj .programming-languages{
-    font-size: 0.9rem;
-    text-align: left;
-    font-weight: bold;
-}
 
 @media(min-width:1000px){
     .page #proj.projects-container.hide{
@@ -143,13 +133,6 @@
 
 }
 
-#des >p{
-    font-size: 0.7rem;
-   text-align: left;
-   font-weight: bold;
-   max-width: 90%;
-   margin: auto;
-}
 
 #g-proj:hover #des{
         display:flex;
@@ -173,56 +156,3 @@
     transform: translateY(10px);
 }
 
-.GOL.ShowProject{
-    background-image: url(../images/family.png);
-    background-size: auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-.ideaPi.ShowProject{    
-    background-image: url(../images/pie.png);
-    background-size: auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-.pWeb.ShowProject{
-    background-image: url(../images/profile.png);
-    background-size: auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-.AG.ShowProject{
-    background-image: url(../images/pattern.png);
-    background-size: auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-.webS.ShowProject{
-    background-image: url(../images/shopping.png);
-    background-size: auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-.ATP.ShowProject{
-    background-image: url(../images/trading.png);
-    background-size: auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-.TP.ShowProject{
-    background-image: url(../images/calendar.png);
-    background-size: auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-.WP.ShowProject{
-    background-image: url(../images/happiness.png);
-    background-size: auto;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}

@@ -10,6 +10,23 @@ background-repeat: no-repeat;
     background-image: linear-gradient(120deg, #89f6fea6 0%, #66a6ff9f 100%);
 }
 `
+const Intro = styled.p`
+    font-size: 0.9rem;
+    text-align: left;
+    padding-bottom: 10px;
+`
+const Languages = styled.p`
+    font-size: 0.9rem;
+    text-align: left;
+    padding-bottom: 10px;
+    font-weight: bold;
+`
+
+const ReadMore = styled.a`
+    text-decoration: underline;
+    text-align: left;
+    font-size: 0.7rem;
+`
 
 const gradient = {
     backgroundImage: "linear-gradient(120deg, #89f6fea6 0%, #66a6ff9f 100%)"
@@ -28,12 +45,12 @@ export const ProjectCard = ({ project }) => {
     {(hovering === slug) ?
     <FadeIn delay = {100}>
         <h1>{title}</h1>
+        <Languages >Languages: {languages}</Languages>
+        <Intro > {description} <ReadMore> Read More </ReadMore> </Intro>
         <span>
-            <a href={launch} target="popup"><button class="button"> Launch</button></a>
-            <a href={github} target="popup"> <GithubBlack /> </a>
+            {(launch == 'none') ? null : <a href={launch} target="popup"><button class="button"> Launch</button></a>}
+            {(github == 'none') ? null : <a href={github} target="popup"> <GithubBlack /> </a> }
         </span>
-        <p>{description}</p>
-        <p class="programming-languages">Languages: {languages}</p>
     </FadeIn>
     : null}
     </ProjectIcon>
