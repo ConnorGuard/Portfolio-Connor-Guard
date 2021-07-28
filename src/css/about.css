@@ -1,0 +1,185 @@
+.page .about{
+    padding-top:12%;
+}
+
+.aboutme-container{
+ border: 4px solid white;
+ color:  rgb(0, 136, 122);
+ margin: auto;
+ border-radius: 10px;
+ position:relative;
+ box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);    
+ margin-left: 50px;
+ width: 680px;
+}
+
+.aboutme-content{
+    max-width: 90%;
+    margin: auto;
+    word-wrap: break-word;
+}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.info-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.about-left .button{
+    width: 150px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    font-size: 1rem;
+    
+}
+.about-left .button:hover{
+    color: white;
+
+    background-color: black;
+    font-size: 1rem;
+}
+
+.about h1{
+    color: rgb(42, 64, 85);
+    text-align: left;
+}
+.about h3{
+    color: rgb(42, 64, 85);
+    text-align: left;
+}
+.about p{
+    color: rgb(93, 123, 151);
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.connorimg{
+    width:280px; /* you can use % */
+    height: auto;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: scaleX(-1);    
+}
+.about-container{
+     display: grid;
+     grid-template-columns: auto auto ;
+     align-content: center;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding-left: 1.2rem;
+
+}
+.skills-list li{    
+    position: relative;
+    color: rgb(104, 104, 104);
+    text-align: left;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: rgb(0, 136, 122);
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+
+.about-container > div{
+    height : 500px;
+}
+
+@media(max-width:1000px){
+    .about-container {
+        transform: scale(0.9, 0.9);
+    }
+    .aboutme-container {
+        margin-left: 10%;
+        width: 400px;
+    }
+    #aboutme-right{ 
+        height:700px;
+    }
+}
+
+@media (max-width:700px){
+    #aboutme-right{ 
+        height: 60%;
+        margin-left: auto;
+        width: 90%;
+        margin-top: 70%;
+    }
+    .about-container {
+        margin:auto;
+        margin-top: -15%;
+        grid-template-columns: auto;
+    }
+    .about-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:auto;
+    }
+    .about-left .button{
+        width: 70%;
+        height: 50px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        font-size: 1rem;
+    }
+    .connorimg{
+        width:90%; /* you can use % */
+        height: auto;
+        border: 5px solid white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);    
+    }
+    .page #about{
+        padding-top: 100px;
+        height:180vh
+    }
+
+    @media (max-width:550px){
+        #aboutme-right{ 
+            height: 80%;
+            margin-left: auto;
+            width: 90%;
+            margin-top: 50%;
+        }
+    }
+
+    @media(max-height:500px){
+        .about-container {
+            margin-top: -10%;
+            transform: scale(0.7, 0.7);
+        }
+        .aboutme-container {
+            margin-left: 10%;
+            max-width: 400px;
+        }
+        #aboutme-right{ 
+            height:700px;
+        }
+    }
+}
