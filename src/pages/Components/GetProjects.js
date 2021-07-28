@@ -12,7 +12,7 @@ export default async function GetProjects(){
 
 export async function getProject({params}){
     const {items} = await client.getEntries({
-        content_type: 'blog',
+        content_type: 'projects',
         'fields.slug': params.slug
     });
     return(items[0]);

@@ -26,6 +26,7 @@ const ReadMore = styled.a`
     text-decoration: underline;
     text-align: left;
     font-size: 0.7rem;
+    color: hotpink;
 `
 
 const gradient = {
@@ -45,11 +46,11 @@ export const ProjectCard = ({ project }) => {
     {(hovering === slug) ?
     <FadeIn delay = {100}>
         <h1>{title}</h1>
-        <Languages >Languages: {languages}</Languages>
-        <Intro > {description} <ReadMore> Read More </ReadMore> </Intro>
+        <Languages >Technologies: {languages}</Languages>
+        <Intro > {description} <ReadMore href={`${window.location.href}project/${slug}`} target="popup"> Read More </ReadMore> </Intro>
         <span>
-            {(launch == 'none') ? null : <a href={launch} target="popup"><button class="button"> Launch</button></a>}
-            {(github == 'none') ? null : <a href={github} target="popup"> <GithubBlack /> </a> }
+            {(launch === 'none') ? null : <a href={launch} target="popup"><button class="button"> Launch</button></a>}
+            {(github === 'none') ? null : <a href={github} target="popup"> <GithubBlack /> </a> }
         </span>
     </FadeIn>
     : null}
