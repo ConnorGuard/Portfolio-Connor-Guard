@@ -10,8 +10,9 @@ import Nav from './Components/Nav'
 
 function Pages() {
   return (
+    <>
+    <Nav />
     <div class="page">
-              <Nav />
       <div className="Front-page">
         <div id="home" class="home">
           <Home />
@@ -25,6 +26,7 @@ function Pages() {
         <Contact />
       </div>
     </div>
+    </>
   )
 }
 
