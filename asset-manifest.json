@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio-Connor-Guard/static/css/main.ef2356e7.chunk.css",
-    "main.js": "/Portfolio-Connor-Guard/static/js/main.4f384d24.chunk.js",
-    "main.js.map": "/Portfolio-Connor-Guard/static/js/main.4f384d24.chunk.js.map",
+    "main.js": "/Portfolio-Connor-Guard/static/js/main.770ed76f.chunk.js",
+    "main.js.map": "/Portfolio-Connor-Guard/static/js/main.770ed76f.chunk.js.map",
     "runtime-main.js": "/Portfolio-Connor-Guard/static/js/runtime-main.928abd1a.js",
     "runtime-main.js.map": "/Portfolio-Connor-Guard/static/js/runtime-main.928abd1a.js.map",
-    "static/js/2.b0d035c0.chunk.js": "/Portfolio-Connor-Guard/static/js/2.b0d035c0.chunk.js",
-    "static/js/2.b0d035c0.chunk.js.map": "/Portfolio-Connor-Guard/static/js/2.b0d035c0.chunk.js.map",
+    "static/js/2.4325d708.chunk.js": "/Portfolio-Connor-Guard/static/js/2.4325d708.chunk.js",
+    "static/js/2.4325d708.chunk.js.map": "/Portfolio-Connor-Guard/static/js/2.4325d708.chunk.js.map",
     "index.html": "/Portfolio-Connor-Guard/index.html",
     "static/css/main.ef2356e7.chunk.css.map": "/Portfolio-Connor-Guard/static/css/main.ef2356e7.chunk.css.map",
-    "static/js/2.b0d035c0.chunk.js.LICENSE.txt": "/Portfolio-Connor-Guard/static/js/2.b0d035c0.chunk.js.LICENSE.txt"
+    "static/js/2.4325d708.chunk.js.LICENSE.txt": "/Portfolio-Connor-Guard/static/js/2.4325d708.chunk.js.LICENSE.txt",
+    "static/media/github-proj.44eee0c4.png": "/Portfolio-Connor-Guard/static/media/github-proj.44eee0c4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.928abd1a.js",
-    "static/js/2.b0d035c0.chunk.js",
+    "static/js/2.4325d708.chunk.js",
     "static/css/main.ef2356e7.chunk.css",
-    "static/js/main.4f384d24.chunk.js"
+    "static/js/main.770ed76f.chunk.js"
   ]
 }
