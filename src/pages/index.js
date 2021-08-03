@@ -1,11 +1,11 @@
-import './css/App.css';
+import '../css/App.css';
 import React from 'react';
 //Import Pages
-import Contact from './pages/Contact'
-import Home from './pages/Home'
-import AboutMe from './pages/AboutMe'
-import Projects from './pages/Projects'
-import Nav from './Components/Nav'
+import Contact from './Contact'
+import Home from './Home'
+import AboutMe from './AboutMe'
+import Projects from './Projects'
+import Nav from '../Components/Nav'
 
 
 function Pages() {

@@ -18,7 +18,7 @@ function Nav(){
 
     return(
     <div >
-      <div class ="logo"> <a href = "#home">CONNOR {(logoOn) ? <span href = "#">GUARD</span>: null} </a> </div> 
+      <div class ="logo" onClick={() => {window.location.href='/#home';} }> CONNOR {(logoOn) ? <span>GUARD</span>: null} </div> 
       <div class = "nav" >
       <div class = "content"> 
       {(hideBtn)?   <a class = "toggle-button" onClick={() => {setToggle(!isToggleOn)}}>
@@ -36,10 +36,10 @@ function Nav(){
   function Navbuttons(){
       return(  
       <nav class = "nav-buttons">
-        <button class = "button home" onClick={() => {window.location.href='#home';} }>HOME </button>
-        <button class = "button projects" onClick={() => {window.location.href='#proj';}}>PROJECTS</button>
-        <button class = "button about" onClick={() => {window.location.href='#about';}}>ABOUT</button>
-        <button class = "button contact" onClick={() => {window.location.href='#contact';}}> CONTACT </button>
-        <a href="https://drive.google.com/file/d/1LZJ27QxnK6YilP6gt8VT02HrJ2bkhauh/view" target="_blank"><button class = "button resume"> RESUME </button></a>
+        <button class = "button home" onClick={() => {window.location.href='/#home';} }>HOME </button>
+        <button class = "button projects" onClick={() => {window.location.href='/#proj';}}>PROJECTS</button>
+        <button class = "button about" onClick={() => {window.location.href='/#about';}}>ABOUT</button>
+        <button class = "button contact" onClick={() => {window.location.href='/#contact';}}> CONTACT </button>
+        <a href="https://drive.google.com/file/d/1LZJ27QxnK6YilP6gt8VT02HrJ2bkhauh/view" target="_blank" rel="noreferrer"><button class = "button resume"> RESUME </button></a>
       </nav>)
   }

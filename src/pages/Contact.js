@@ -1,6 +1,8 @@
 //import { db } from '../Components/firebase.js';
 import React, { useEffect, useState } from 'react';
-
+import GithubLogo from '../images/github.png';
+import LinkedInLogo from '../images/linkedin.png';
+import EmailLogo from '../images/email.png';
 export default Contact;
 
 function Contact() {
@@ -44,16 +46,11 @@ function Contact() {
 function Socials() {
     return (
         <div class="Socials">
-            <a href="https://www.linkedin.com/in/connor-guard/" target="popup"><img class="icon linkedin" src="./linkedin.png" height="50" widh="50"></img></a>
-            <GitHub />
-            <a href="mailto: connor.guard@gmail.com" target="popup"><img class="icon email" src="./email.png" height="31" widh="31"></img></a>
+            <a href="https://www.linkedin.com/in/connor-guard/" target="popup"><img alt = "linkedin" class="icon" src={LinkedInLogo} height="40" width="40"></img></a>
+            <a href="https://github.com/ConnorGuard" target="popup"><img alt = "github" class="icon" src={GithubLogo} height="40" width="40"></img></a>
+            <a href="mailto: connor.guard@gmail.com" target="popup"><img alt = "email" class="icon" src={EmailLogo} height="40" width="40"></img></a>
         </div>
     );
 }
 
-function GitHub() {
-    return (
-        <a class="github" href="https://github.com/ConnorGuard" target="popup"><img class="icon github" src="./github.png" height="50" widh="50" target="popup"></img></a>
-    )
-}
 

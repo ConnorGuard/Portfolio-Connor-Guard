@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
 import FadeIn from 'react-fade-in';
-
+import GithubLogo from '../../images/github.png';
 const ProjectIcon = styled.div`
 background-size: auto;
 background-position: 50%;
@@ -27,6 +27,7 @@ const ReadMore = styled.a`
     text-align: left;
     font-size: 0.7rem;
     color: hotpink;
+    cursor: pointer;
 `
 
 const gradient = {
@@ -47,7 +48,7 @@ export const ProjectCard = ({ project }) => {
     <FadeIn delay = {100}>
         <h1>{title}</h1>
         <Languages >Technologies: {languages}</Languages>
-        <Intro > {description} <ReadMore href={`${window.location.href}project/${slug}`} target="popup"> Read More </ReadMore> </Intro>
+        <Intro > {description} <ReadMore onClick={() => {window.location.href=`/project/${slug}`;} }> Read More </ReadMore> </Intro>
         <span>
             {(launch === 'none') ? null : <a href={launch} target="popup"><button class="button"> Launch</button></a>}
             {(github === 'none') ? null : <a href={github} target="popup"> <GithubBlack /> </a> }
@@ -60,5 +61,5 @@ export const ProjectCard = ({ project }) => {
 
 
 function GithubBlack() {
-    return (<img class="github-proj" src="./github-proj.png" height="30" widh="3 0" target="popup" alt = "github"></img>)
+    return (<img class="github-proj" src={GithubLogo}  height="30" widh="3 0" target="popup" alt = "github"></img>)
 }

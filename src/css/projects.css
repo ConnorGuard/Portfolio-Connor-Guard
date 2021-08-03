@@ -1,5 +1,6 @@
 @media(min-width:00px){
     #proj{
+        padding-top: 100px;
         align-items: center;
     }
     
@@ -107,20 +108,10 @@
     font-weight: lighter;
     text-align: center;
 }
-#proj .title{
-    padding-top: 100px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    max-width: 52%;
-    margin: auto;
-    text-align: left;
-    margin-bottom: -60px;
-    color: rgb(93, 123, 151);
-}
 
 @media(min-width:1000px){
     .page #proj.projects-container.hide{
-        height: 80vh;
+        height: 60vh;
     }
     .page #proj.projects-container.show{
         height: 100vh;

@@ -1,13 +1,13 @@
 import FadeIn from 'react-fade-in';
-
+import ProfilePicture from '../images/connor.jpg';
 
 export default  function AboutMe() {
   return (
     <div class="about-container">
       <div class="about-left">
         <div class="info-left">
-          <img class="connorimg" src="connor.jpg"></img>
-          <p href="#contact">Available for work</p>
+          <img class="connorimg" src={ProfilePicture} ></img>
+          <p href="#contact"></p>
           <a href="https://drive.google.com/file/d/1LZJ27QxnK6YilP6gt8VT02HrJ2bkhauh/view" target="_blank"><button class="button">My resume</button></a>
           <button class="button" onClick={() => { window.location.href = '#contact'; }}>Lets work</button>
         </div>
@@ -35,7 +35,6 @@ export default  function AboutMe() {
             <li>C</li>
             <li>SQL</li>
           </ul>
-
         </div>
       </div>
     </div>
